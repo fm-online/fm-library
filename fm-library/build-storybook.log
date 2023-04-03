@@ -21,283 +21,373 @@ Node.js version : v16.14.2
 
 Operating system : macOS
 
-[16:41:18] No configuration file found, switching to CLI flags.
-[16:41:18] Using tsconfig file : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/tsconfig.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.DS_Store
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.browserslistrc
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.editorconfig
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.gitignore
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.npmrc
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/README.md
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/angular.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/build-storybook.log
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/documentation.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/karma.conf.js
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/package-lock.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/package.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/tsconfig.app.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/tsconfig.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/tsconfig.spec.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.storybook/preview.js
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.storybook/main.js
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.storybook/tsconfig.json
-[16:41:18] Ignoring       : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.storybook/typings.d.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.vscode/extensions.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.vscode/tasks.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.vscode/launch.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/.DS_Store
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/favicon.ico
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/index.html
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/main.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/polyfills.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/styles.scss
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/test.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app-routing.module.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.html
-[16:41:18] Ignoring       : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.spec.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.module.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.scss
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/assets/.gitkeep
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/assets/avataaars.png
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/environments/environment.prod.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/environments/environment.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Button.stories.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Header.stories.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Page.stories.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Introduction.stories.mdx
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/User.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/button.component.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/button.css
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/header.component.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/header.css
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/page.component.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/page.css
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/shared.module.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/code-brackets.svg
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/colors.svg
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/comments.svg
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/direction.svg
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/flow.svg
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/plugin.svg
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/repo.svg
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/stackalt.svg
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.component.html
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.component.scss
-[16:41:18] Ignoring       : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.component.spec.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.component.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.stories.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.component.html
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.component.scss
-[16:41:18] Ignoring       : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.component.spec.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.component.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.stories.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/models/avatar-data.model.ts
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/09591f9017bb3f36221b6aab17aaae64.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/20b3b9b822130a640030d0246708e371.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/2b232f51216ca24d12b8a9c24b3c843e.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/37dbfe538910a66fd371e34147d3f479.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/3ab11ef9a3612c4f7b72c42889ff2f86.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/4f53fa8a2620726fb2cfd0f705cba42a.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/89d7c78690c1ba3c18c356052412d3ec.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/8bb05eb7900d9095470b9f30ae4e61d6.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/9e1eb2170f8d95e525ba2de204dc00bc.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/ab341c0d4a4da5bd43c49e9486ccd9a6.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/b6657ac3665c69398ac78c0354dd3784.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/c1d0eb063327495bc65c84766090079e.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/cf1453ecf70220e14a9bc6e1d8b1881d.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/d58234e7de5a75ec9304d2e10eabddaa.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/e0b8a3711ac6c7bc9742e79fa2b1f1eb.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/e71ddd706501cdad768af2d1cea289b8.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/e7778abc5d788934707dc2b2b9f806f9.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/f0bb608c772210aa32fc2082335a2b0f.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/f486a001ad12a02980b35fa46192940c.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/babel-webpack/f8b1aab3bc751a7ca7cd54aa694fc4c9.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/020f691d4accdda94268a57cb7737c5f.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/02d300771ef8b6312892a667e4bbc7d9.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/0828df0d8e1b239034a9cfcf21b9c114.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/08b2c96134005f3fcaa7a47450bd10ba.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/0a8335657c801445c785a3c4adf512c4.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/0c10a9a4194c7e94da9bd6fa9003c41d.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/1322fce644ea05344ccb1aad9075ab73.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/1d3e7beaee1e8049b76027c2f1d997eb.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/1d572638f0964fdac518bc09e3e83e35.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2355d7a0fa8ed6e6cf1294b79ccd862a.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2459992a649f22752aefef0b9092b3f2.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2647fee37a31dab184c9e2698abc8a96.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/26abccd5403d2a0b71a4ce287cf0684d.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2979f2dde8cf796b852eeeb4bb384759.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2c9c4ee12b197c2292019c0b1e1f8706.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2d7a323ff818d60a3f4e59a6078a7067.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2ec6cde2a1cee03b407fe7111805851d.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/31171b68d43e83f0ffb0ef2c4a43d0f7.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/35e718951c16e7e3fca1b69b954b43b2.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/377bfd006564346b82630496ea118493.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/39f071ff33af935374d512fe09b74f75.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/3a8864731ea60b99534db9e2800bd070.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/3deadeac54842abbf1cb2477778cb2ed.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/43ceffb0bcbcd66f33a0ce249e3fe6a6.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/43f9f306e05f1fced2b0bf3464f7ac8c.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/4a39d6d00d11b746b820117dfa5f8b5b.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/50de35ad928fd16d66b25eba518782d8.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/513fbfea1eb5bee8b51a0473bda3bd33.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/566158e22081a6ab0a19b9ded24ebaeb.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/5c873df1cc93989777e0d08fe97cd1d9.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/63836770117cc7796f2a7312a9d3056c.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/74209bdc745b63d7d7518747b405501e.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/79fffaec4c6ed446de3a9b5e88abe2b9.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/7ec180e1295a3120d35c8050b510525e.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/7f260c63e8dcf0b31a2de7379c53c49a.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/806d02f36a5b24bfd061de2f7f9db3ae.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/81d59ed55886dcd9f7230841e9f17093.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/8953eb656d87f259bc79ef8e35063f7e.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/8c90704e27428faddc5bfdc75aff9d31.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/8f7c5c428d620eda37eedf050a8ca47d.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/90e653deefa0f6bda224bfa80c30f67c.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/920cfe378a55fea522d19bbe02bc37f6.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/98bc6b87df93a1d8615f9c2d8ac34b56.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/9f179f9a79dfc5d0541bc0d301504bd3.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/a53b4e7e61eb4c7cb92fc4bf1419554e.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/a59eae98afebbf4373ed17f137ee197d.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/a7d486e47d62290e8f663dac840d2f29.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/abe3b8d01dc1b7268f8a9ae260253d6d.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/aff17d70b30e4fcc1044ab6d76658b0b.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/b501bcaeccca5c4fd8e62ebad2f393b6.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/b532f9cd7c7225d8b021623a9e8e3de0.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/b5f881b8ff5ad703693e6c1437048d5c.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/be31b7ca4d50adf016c1f3616c815b84.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/c5002816ebbd8131aa3ca36f9b2a8221.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/ca18fa46d2d630b407b878b7c60423df.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/cd6343cd7568bc0bd5abbfaeb4829972.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/ce650ea5e521cb813ef0feb3431038b4.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/d4af8834229edf194afc80b7de497f30.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/d92a0aa80f1687d64ea69784dca6c3f3.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/e4e869cd087c73fdda3e45d8369bf18b.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/e7c5b3c66847012ba841a2ee9d9153c7.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/f1115cb2551c3c96334e43ef286dee6b.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/f5abb48bb97d44d8a8f5a6c9aa04e05b.json
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/angular-webpack/331830de315cc282d103396a50f9bc842a044c1b/0.pack
-[16:41:18] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.3.11/angular-webpack/331830de315cc282d103396a50f9bc842a044c1b/index.pack
-[16:41:18] Searching package.json file
-[16:41:18] package.json file found
-[16:41:18] Processing package.json dependencies
-[16:41:18] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
-[16:41:18] README.md file found
-[16:41:18] Error during /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/CHANGELOG read
-[16:41:18] Continuing without CHANGELOG.md file
-[16:41:18] Error during /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/CONTRIBUTING read
-[16:41:18] Continuing without CONTRIBUTING.md file
-[16:41:18] Error during /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/LICENSE read
-[16:41:18] Continuing without LICENSE.md file
-[16:41:18] Error during /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/TODO read
-[16:41:18] Continuing without TODO.md file
-[16:41:18] Get dependencies data
-[16:41:18] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/main.ts
-[16:41:18] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/polyfills.ts
-[16:41:18] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/test.ts
-[16:41:18] found          : require
-[16:41:18] found          : context
-[16:41:18] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app-routing.module.ts
-[16:41:18] Analysing routes definitions and clean them if necessary
-[16:41:18] found          : AppRoutingModule
-[16:41:18]                : - imports:
-[16:41:18]                : 	- RouterModule
-[16:41:18]                : - exports:
-[16:41:18]                : 	- RouterModule
-[16:41:18] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.ts
-[16:41:18] found          : AppComponent
-[16:41:18] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.module.ts
-[16:41:18] found          : AppModule
-[16:41:18]                : - imports:
-[16:41:18]                : 	- BrowserModule
-[16:41:18]                : 	- AppRoutingModule
-[16:41:18]                : 	- BrowserAnimationsModule
-[16:41:18]                : - declarations:
-[16:41:18]                : 	- AppComponent
-[16:41:18]                : - bootstrap:
-[16:41:18]                : 	- AppComponent
-[16:41:18] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/environments/environment.prod.ts
-[16:41:18] found          : environment
-[16:41:18] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/environments/environment.ts
-[16:41:18] found          : environment
-[16:41:18] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Button.stories.ts
-[16:41:18] found          : Template
-[16:41:19] found          : Primary
-[16:41:19] found          : Secondary
-[16:41:19] found          : Large
-[16:41:19] found          : Small
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Header.stories.ts
-[16:41:19] found          : Template
-[16:41:19] found          : LoggedIn
-[16:41:19] found          : LoggedOut
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Page.stories.ts
-[16:41:19] found          : Template
-[16:41:19] found          : LoggedIn
-[16:41:19] found          : LoggedOut
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/User.ts
-[16:41:19] found          : User
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/button.component.ts
-[16:41:19] found          : ButtonComponent
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/header.component.ts
-[16:41:19] found          : HeaderComponent
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/page.component.ts
-[16:41:19] found          : PageComponent
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/shared.module.ts
-[16:41:19] found          : SharedModule
-[16:41:19]                : - imports:
-[16:41:19]                : 	- CommonModule
-[16:41:19]                : 	- MatCardModule
-[16:41:19]                : 	- MatDividerModule
-[16:41:19]                : 	- MatIconModule
-[16:41:19]                : 	- MatListModule
-[16:41:19]                : - declarations:
-[16:41:19]                : 	- AvatarComponent
-[16:41:19]                : 	- AvatarListComponent
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.component.ts
-[16:41:19] found          : AvatarComponent
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.stories.ts
-[16:41:19] found          : Template
-[16:41:19] found          : AvatarDefault
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.component.ts
-[16:41:19] found          : AvatarListComponent
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.stories.ts
-[16:41:19] found          : Template
-[16:41:19] found          : AvatarListDefault
-[16:41:19] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/models/avatar-data.model.ts
-[16:41:19] found          : AvatarData
-[16:41:19] -------------------
-[16:41:19] Project statistics 
-[16:41:19] - files      : 151
-[16:41:19] - module     : 3
-[16:41:19] - component  : 6
-[16:41:19] - interface  : 2
-[16:41:19] -------------------
-[16:41:19] Prepare components
-[16:41:19]  AppComponent has a templateUrl, include it
-[16:41:19]  AppComponent has styleUrls, include them
-[16:41:19]  AvatarComponent has a templateUrl, include it
-[16:41:19]  AvatarComponent has styleUrls, include them
-[16:41:19]  AvatarListComponent has a templateUrl, include it
-[16:41:19]  AvatarListComponent has styleUrls, include them
-[16:41:19]  ButtonComponent has styleUrls, include them
-[16:41:19]  HeaderComponent has styleUrls, include them
-[16:41:19]  PageComponent has styleUrls, include them
-[16:41:19] Prepare modules
-[16:41:19] Process routes
-[16:41:19] Prepare interfaces
-[16:41:19] Prepare miscellaneous
-[16:41:19] Process documentation coverage report
-[16:41:19] Generating documentation in export format json
-[16:41:19] Documentation generated in ./ in 0.379 seconds
+[17:16:07] No configuration file found, switching to CLI flags.
+[17:16:07] Using tsconfig file : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/tsconfig.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.DS_Store
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.browserslistrc
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.editorconfig
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.gitignore
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.npmrc
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/README.md
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/angular.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/build-storybook.log
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/documentation.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/karma.conf.js
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/package-lock.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/package.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/tsconfig.app.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/tsconfig.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/tsconfig.spec.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.storybook/main.js
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.storybook/preview.js
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.storybook/tsconfig.json
+[17:16:07] Ignoring       : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.storybook/typings.d.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.vscode/extensions.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.vscode/launch.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.vscode/tasks.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/.DS_Store
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/favicon.ico
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/index.html
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/main.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/polyfills.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/styles.scss
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/test.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app-routing.module.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.html
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.scss
+[17:16:07] Ignoring       : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.spec.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.module.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/assets/.gitkeep
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/assets/avataaars.png
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/environments/environment.prod.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/environments/environment.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Button.stories.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Header.stories.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Introduction.stories.mdx
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Page.stories.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/User.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/button.component.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/button.css
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/header.component.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/header.css
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/page.component.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/page.css
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/shared.module.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/assets/styles/_colors.scss
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/assets/styles/_fonts.scss
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/code-brackets.svg
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/colors.svg
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/comments.svg
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/direction.svg
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/flow.svg
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/plugin.svg
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/repo.svg
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/assets/stackalt.svg
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/elements/counter/counter.component.html
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/elements/counter/counter.component.scss
+[17:16:07] Ignoring       : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/elements/counter/counter.component.spec.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/elements/counter/counter.component.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/elements/counter/counter.stories.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.component.html
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.component.scss
+[17:16:07] Ignoring       : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.component.spec.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.component.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.stories.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/models/avatar-data.model.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.component.html
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.component.scss
+[17:16:07] Ignoring       : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.component.spec.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.component.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.stories.ts
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/020f691d4accdda94268a57cb7737c5f.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/02d300771ef8b6312892a667e4bbc7d9.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/03c9ec684194f5e95307b8bcce19abb4.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/05ed305bc52f66f0f3e76f9a551a1ae3.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/06841377ffd8ca3124800611dc7703da.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/0828df0d8e1b239034a9cfcf21b9c114.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/08b2c96134005f3fcaa7a47450bd10ba.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/0a8335657c801445c785a3c4adf512c4.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/0c10a9a4194c7e94da9bd6fa9003c41d.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/0c8f83b46c3c3502aea874be4bdf8bb2.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/1322fce644ea05344ccb1aad9075ab73.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/17ad9626acb47756e855b2b9d1653e36.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/17e0883bb08b3d0135bb6f6fef870983.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/17fb9c050e45a07b46630c44f7661d14.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/188380c27d7ed5121a1f0f1009958357.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/1889d6ee5a3b62195a2b176cc5830863.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/19edeb41184d10cc962c57b6309029e1.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/1a552fed3cc6b990998d498878a6ed8d.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/1ba1cc5dd3fea85c70823950a20c99aa.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/1d3e7beaee1e8049b76027c2f1d997eb.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/1d572638f0964fdac518bc09e3e83e35.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2355d7a0fa8ed6e6cf1294b79ccd862a.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2438a9a25f1b0fb96ae0a811095c9a46.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2459992a649f22752aefef0b9092b3f2.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2647fee37a31dab184c9e2698abc8a96.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/26abccd5403d2a0b71a4ce287cf0684d.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2979f2dde8cf796b852eeeb4bb384759.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2c9c4ee12b197c2292019c0b1e1f8706.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2d0f0122c659d5930cb2404af892f53b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2d7a323ff818d60a3f4e59a6078a7067.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2deb78310e73d05aa68bd8aa6da2a45f.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2ec6cde2a1cee03b407fe7111805851d.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/2f2cc5da4138ab06b2ec1a605cda111e.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/31171b68d43e83f0ffb0ef2c4a43d0f7.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/336576a5e6adf4ebc9bf37f26507925a.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/35e718951c16e7e3fca1b69b954b43b2.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/3759f4982858db9ec25b26d32a3f69ec.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/377bfd006564346b82630496ea118493.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/384f65313a6f35458b5a83124a24b612.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/39f071ff33af935374d512fe09b74f75.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/3a8864731ea60b99534db9e2800bd070.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/3b1a102c02dba01cefd83900ac30de4d.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/3ba03b3350ead2f136cd82ad800173a0.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/3bcd9f497a22b4382f5db8ddbb87e081.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/3d26bfa55c8db1d4eb9e8f0388f5f6c1.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/3deadeac54842abbf1cb2477778cb2ed.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/3e63d9551d10c194c1089c5cdd0f079b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/435afb4896a53f293ceb2dc27777478f.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/43ceffb0bcbcd66f33a0ce249e3fe6a6.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/43f9f306e05f1fced2b0bf3464f7ac8c.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/474a88dccadfa27327a7cff9d6ea4096.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/4794208f3d169db1fb9f4dcd4ae4894b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/47ae91dc4fa070235223ad9e382c2e89.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/47c49d81e63f72eba01742a34929969d.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/4a39d6d00d11b746b820117dfa5f8b5b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/50de35ad928fd16d66b25eba518782d8.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/50df9e9109e98eff367035c074a9f959.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/513fbfea1eb5bee8b51a0473bda3bd33.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/55fb054a2120e9f353f48508a69ed1e3.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/566158e22081a6ab0a19b9ded24ebaeb.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/5ac9f2cb48c6f101c654afccc31cef58.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/5b9ee1c3aba8b817f57bf2a6f2ac0d3f.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/5c873df1cc93989777e0d08fe97cd1d9.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/5dd66b15cddb2445583ba996514e1dd3.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/5ea8793a3ca09cd66ed7f9cf5b720249.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/60e109c04ce6ca3ce57db0db68224174.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/634e7d0ede9d6198332061a84fb2211a.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/63836770117cc7796f2a7312a9d3056c.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/672b6a62917e9e420f07f5bd642c422b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/673cdf5aca46f0a819609c54eb60f74d.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/6aae7b372a364d141ec74231484b5454.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/6afb734676e30ccc37be905f919accaf.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/6b0875fe9fa138e58c93c067ae2b6b34.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/6b81c7ac35eed18ad8eb34d9b6ff4d18.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/704739320f948a203ec6eca45fb63646.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/71709bf93e210cbd8c2e67fc980e0741.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/74209bdc745b63d7d7518747b405501e.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/7777ce0f74691bc821f92c1a162b84f8.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/79fffaec4c6ed446de3a9b5e88abe2b9.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/7c2d04d75d574916e2ea97e9c51323ac.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/7c638b6f6cc206f4fa3f7529dab1d34a.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/7d05f71caeaf010680183c7200989690.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/7ebad33c8cec6a89dbc1a2388f582185.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/7ec180e1295a3120d35c8050b510525e.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/7ed723b7c1663e65bbffccccc23e9be2.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/7f260c63e8dcf0b31a2de7379c53c49a.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/806d02f36a5b24bfd061de2f7f9db3ae.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/81c026acf239d26f0490d3eafe4ed109.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/81d59ed55886dcd9f7230841e9f17093.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/829f0be4e911d86a4510a5de186b2f23.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/83ee51b0d61e4721cf09b1f9dc2d4237.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/876234ebdff60778ecc6b4e48b50cfa8.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/87cd045b1b9aa912e95515f41a1f3d2b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/88663a5eb0b83de475764fe4f5e7c10f.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/8953eb656d87f259bc79ef8e35063f7e.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/8b850e4c0ec791beb1923ecd3381758a.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/8c6db8d30a4aa35edf9ff622bdaa4661.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/8c90704e27428faddc5bfdc75aff9d31.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/8eb92339c69c803687bbe62c4b03795b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/8f7c5c428d620eda37eedf050a8ca47d.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/904a1e98f08a99223a06a4bcd67417ee.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/90e653deefa0f6bda224bfa80c30f67c.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/920cfe378a55fea522d19bbe02bc37f6.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/9533425ed9f3e6678430d87eba6bbf60.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/98bc6b87df93a1d8615f9c2d8ac34b56.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/9b0e56cf8096764fdf87c446af48e9e1.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/9da1d2060c1947d0243ab5246ca0ba46.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/9f179f9a79dfc5d0541bc0d301504bd3.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/a3acbfc2e3064f00cc17308a2cd57b79.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/a53b4e7e61eb4c7cb92fc4bf1419554e.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/a59eae98afebbf4373ed17f137ee197d.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/a7d486e47d62290e8f663dac840d2f29.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/abe3b8d01dc1b7268f8a9ae260253d6d.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/ad0bfec0c37c60ddc94b2bac06396ef8.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/ad80ef91dc704074c93f57995e49c8f7.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/aff17d70b30e4fcc1044ab6d76658b0b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/b0295ba3dcf7f4842dc30b931f6415bb.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/b1e032c3ad2c759d674dedfc6194aa09.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/b4ed8b82c0e27d245b3136eb1f811514.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/b501bcaeccca5c4fd8e62ebad2f393b6.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/b532f9cd7c7225d8b021623a9e8e3de0.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/b5f881b8ff5ad703693e6c1437048d5c.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/b6b1201d6b5f39566a26665a6d54c81e.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/bb269b8322d87e69822a976f074a9c36.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/be31b7ca4d50adf016c1f3616c815b84.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/be862c59525287622a5bbcd99adab2bb.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/c031c40d5707f57224d2487461b5d2c0.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/c102e3b66ce516697c00777a92ed20c9.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/c2aefc5bccbaaacb26f891aadfda438f.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/c387ad9a9b871b3fb09b6dec000900b9.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/c5002816ebbd8131aa3ca36f9b2a8221.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/c983ef693553c4eba6a5c149b063dfa4.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/ca18fa46d2d630b407b878b7c60423df.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/cb55d20aa08c3335e934ef1dee6dc5d7.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/cca9a4db6b1a7673752769808984ca75.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/cd6343cd7568bc0bd5abbfaeb4829972.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/ce650ea5e521cb813ef0feb3431038b4.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/ceb6419b6e562db4d82227dfb4b00057.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/d4af8834229edf194afc80b7de497f30.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/d697b8fe71ea38335b2298bd414d32a5.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/d69801e79f595709b0c18b4acac2ed1f.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/d86df4a9de043a6aeecdb89db85bcaff.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/d92a0aa80f1687d64ea69784dca6c3f3.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/ddbd55590b69c24c7a623fb177a9e82f.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/dfd0a861e899767b0ae11f0cfe396cf6.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/e28aa3b4c3f77d1ef021e7db1b7c316a.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/e4e869cd087c73fdda3e45d8369bf18b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/e70309dfc7f5a6e50cf91377fb59a517.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/e71a240f1426cc6fffe4cb1e672793f1.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/e7c5b3c66847012ba841a2ee9d9153c7.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/f1115cb2551c3c96334e43ef286dee6b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/f34f3a84df4e295fb5412ce2b44cc433.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/eccf51bc71b3c28e3d6a088ab3837503.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/f3bf95de3e435b07f3e9a8d17072042e.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/f5aa46188acb2bd8d10784f150df068a.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/f5abb48bb97d44d8a8f5a6c9aa04e05b.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/babel-webpack/fc7c5ce350b3b974b4b0d662e27b8179.json
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/angular-webpack/f6e3b1e6dd5afcc07ca10546d6fa21bf20fd9136/0.pack
+[17:16:07] Including      : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/.angular/cache/13.1.4/angular-webpack/f6e3b1e6dd5afcc07ca10546d6fa21bf20fd9136/index.pack
+[17:16:07] Searching package.json file
+[17:16:07] package.json file found
+[17:16:07] Processing package.json dependencies
+[17:16:07] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[17:16:07] README.md file found
+[17:16:07] Error during /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/CHANGELOG read
+[17:16:07] Continuing without CHANGELOG.md file
+[17:16:07] Error during /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/CONTRIBUTING read
+[17:16:07] Continuing without CONTRIBUTING.md file
+[17:16:07] Error during /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/LICENSE read
+[17:16:07] Continuing without LICENSE.md file
+[17:16:07] Error during /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/TODO read
+[17:16:07] Continuing without TODO.md file
+[17:16:07] Get dependencies data
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/main.ts
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/polyfills.ts
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/test.ts
+[17:16:07] found          : require
+[17:16:07] found          : context
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app-routing.module.ts
+[17:16:07] Analysing routes definitions and clean them if necessary
+[17:16:07] found          : AppRoutingModule
+[17:16:07]                : - imports:
+[17:16:07]                : 	- RouterModule
+[17:16:07]                : - exports:
+[17:16:07]                : 	- RouterModule
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.ts
+[17:16:07] found          : AppComponent
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.module.ts
+[17:16:07] found          : AppModule
+[17:16:07]                : - imports:
+[17:16:07]                : 	- BrowserModule
+[17:16:07]                : 	- AppRoutingModule
+[17:16:07]                : 	- FontAwesomeModule
+[17:16:07]                : 	- BrowserAnimationsModule
+[17:16:07]                : - declarations:
+[17:16:07]                : 	- AppComponent
+[17:16:07]                : 	- CounterComponent
+[17:16:07]                : - bootstrap:
+[17:16:07]                : 	- AppComponent
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/environments/environment.prod.ts
+[17:16:07] found          : environment
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/environments/environment.ts
+[17:16:07] found          : environment
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Button.stories.ts
+[17:16:07] found          : Template
+[17:16:07] found          : Primary
+[17:16:07] found          : Secondary
+[17:16:07] found          : Large
+[17:16:07] found          : Small
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Header.stories.ts
+[17:16:07] found          : Template
+[17:16:07] found          : LoggedIn
+[17:16:07] found          : LoggedOut
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/Page.stories.ts
+[17:16:07] found          : Template
+[17:16:07] found          : LoggedIn
+[17:16:07] found          : LoggedOut
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/User.ts
+[17:16:07] found          : User
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/button.component.ts
+[17:16:07] found          : ButtonComponent
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/header.component.ts
+[17:16:07] found          : HeaderComponent
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/stories/page.component.ts
+[17:16:07] found          : PageComponent
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/shared.module.ts
+[17:16:07] found          : SharedModule
+[17:16:07]                : - imports:
+[17:16:07]                : 	- CommonModule
+[17:16:07]                : 	- MatCardModule
+[17:16:07]                : 	- MatDividerModule
+[17:16:07]                : 	- MatIconModule
+[17:16:07]                : 	- MatListModule
+[17:16:07]                : - declarations:
+[17:16:07]                : 	- AvatarComponent
+[17:16:07]                : 	- AvatarListComponent
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/elements/counter/counter.component.ts
+[17:16:07] found          : CounterComponent
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/elements/counter/counter.stories.ts
+[17:16:07] found          : Template
+[17:16:07] found          : Default
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.component.ts
+[17:16:07] found          : AvatarListComponent
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar-list/avatar-list.stories.ts
+[17:16:07] found          : Template
+[17:16:07] found          : AvatarListDefault
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/models/avatar-data.model.ts
+[17:16:07] found          : AvatarData
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.component.ts
+[17:16:07] found          : AvatarComponent
+[17:16:07] parsing        : /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/shared/avatar/avatar.stories.ts
+[17:16:07] found          : Template
+[17:16:07] found          : AvatarDefault
+[17:16:07] -------------------
+[17:16:07] Project statistics 
+[17:16:07] - files      : 231
+[17:16:07] - module     : 3
+[17:16:07] - component  : 7
+[17:16:07] - interface  : 2
+[17:16:07] -------------------
+[17:16:07] Prepare components
+[17:16:07]  AppComponent has a templateUrl, include it
+[17:16:07]  AppComponent has styleUrls, include them
+[17:16:07]  AvatarComponent has a templateUrl, include it
+[17:16:07]  AvatarComponent has styleUrls, include them
+[17:16:07]  AvatarListComponent has a templateUrl, include it
+[17:16:07]  AvatarListComponent has styleUrls, include them
+[17:16:07]  ButtonComponent has styleUrls, include them
+[17:16:07]  CounterComponent has a templateUrl, include it
+[17:16:07]  CounterComponent has styleUrls, include them
+[17:16:07]  HeaderComponent has styleUrls, include them
+[17:16:07]  PageComponent has styleUrls, include them
+[17:16:07] Prepare modules
+[17:16:07] Process routes
+[17:16:07] Prepare interfaces
+[17:16:07] Prepare miscellaneous
+[17:16:07] Process documentation coverage report
+[17:16:07] Generating documentation in export format json
+[17:16:07] Documentation generated in ./ in 0.653 seconds
 info @storybook/angular v6.4.13
 info 
-info => Cleaning outputDir: /var/folders/rm/nm3m34h54wq6m7_sj2x428wm0000gn/T/chromatic--15268-RaNvyzyWjDhA
+info => Cleaning outputDir: /var/folders/rm/nm3m34h54wq6m7_sj2x428wm0000gn/T/chromatic--22666-cI4cpi4iDjBR
 info => Loading presets
 ERR! Addon value should end in /register OR it should be a valid preset https://storybook.js.org/docs/react/addons/writing-presets/
 ERR! @storybook/addon-interactions
 info => Compiling manager..
 info => Compiling preview..
-(node:15296) [DEP0148] DeprecationWarning: Use of deprecated folder mapping "./" in the "exports" field module resolution of the package at /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/node_modules/tslib/package.json.
+(node:22692) [DEP0148] DeprecationWarning: Use of deprecated folder mapping "./" in the "exports" field module resolution of the package at /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/node_modules/tslib/package.json.
 Update this package.json to use a subpath pattern like "./*".
 (Use `node --trace-deprecation ...` to show where the warning was created)
 info => Using implicit CSS loaders
@@ -446,53 +536,53 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 10% building 0/18 entries 7/19 dependencies 0/7 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/@ngtools/webpack/src/ivy/index.js
 <s> [webpack.Progress] 10% building 0/18 entries 7/19 dependencies 0/7 modules
-<s> [webpack.Progress] 10% building 0/18 entries 20/28 dependencies 0/19 modules
-<s> [webpack.Progress] 10% building 0/18 entries 82/137 dependencies 2/47 modules
-<s> [webpack.Progress] 13% building 1/18 entries 206/300 dependencies 14/113 modules
-<s> [webpack.Progress] 13% building 1/18 entries 297/368 dependencies 16/151 modules
+<s> [webpack.Progress] 10% building 0/18 entries 19/29 dependencies 0/19 modules
+<s> [webpack.Progress] 10% building 0/18 entries 123/200 dependencies 2/83 modules
+<s> [webpack.Progress] 13% building 1/18 entries 164/239 dependencies 11/84 modules
 <s> [webpack.Progress] 13% building import loader ./node_modules/@mdx-js/loader/index.js
-<s> [webpack.Progress] 13% building 1/18 entries 302/368 dependencies 17/151 modules
+<s> [webpack.Progress] 13% building 1/18 entries 255/322 dependencies 14/134 modules
 <s> [webpack.Progress] 13% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
-<s> [webpack.Progress] 13% building 1/18 entries 302/368 dependencies 17/151 modules
-<s> [webpack.Progress] 13% building 1/18 entries 357/400 dependencies 19/180 modules
-<s> [webpack.Progress] 16% building 2/18 entries 604/826 dependencies 47/224 modules
-<s> [webpack.Progress] 16% building 2/18 entries 794/837 dependencies 47/300 modules
-<s> [webpack.Progress] 16% building 2/18 entries 900/1047 dependencies 61/312 modules
-<s> [webpack.Progress] 16% building 2/18 entries 1022/1100 dependencies 76/347 modules
+<s> [webpack.Progress] 13% building 1/18 entries 266/322 dependencies 14/142 modules
+<s> [webpack.Progress] 13% building 1/18 entries 300/400 dependencies 14/166 modules
+<s> [webpack.Progress] 13% building 1/18 entries 527/747 dependencies 41/200 modules
+<s> [webpack.Progress] 13% building 1/18 entries 788/1034 dependencies 46/282 modules
+<s> [webpack.Progress] 16% building 2/18 entries 870/1057 dependencies 60/310 modules
+<s> [webpack.Progress] 16% building 2/18 entries 1089/1200 dependencies 81/354 modules
 [BABEL] Note: The code generator has deoptimised the styling of /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/node_modules/prettier/standalone.js as it exceeds the max of 500KB.
-<s> [webpack.Progress] 16% building 2/18 entries 1300/1406 dependencies 115/367 modules
-<s> [webpack.Progress] 16% building 2/18 entries 1362/1500 dependencies 118/382 modules
-<s> [webpack.Progress] 16% building 2/18 entries 1616/1800 dependencies 186/400 modules
-<s> [webpack.Progress] 19% building 3/18 entries 1644/1801 dependencies 245/400 modules
-<s> [webpack.Progress] 19% building 3/18 entries 1791/2000 dependencies 266/451 modules
-<s> [webpack.Progress] 19% building 3/18 entries 1800/2168 dependencies 266/457 modules
-<s> [webpack.Progress] 19% building 3/18 entries 2160/2200 dependencies 291/636 modules
-<s> [webpack.Progress] 19% building 3/18 entries 2400/2645 dependencies 321/679 modules
-<s> [webpack.Progress] 19% building 3/18 entries 2873/3000 dependencies 347/741 modules
-<s> [webpack.Progress] 19% building 3/18 entries 3127/3300 dependencies 375/776 modules
-<s> [webpack.Progress] 22% building 4/18 entries 3345/3393 dependencies 399/808 modules
-<s> [webpack.Progress] 22% building 4/18 entries 3546/3600 dependencies 462/863 modules
-<s> [webpack.Progress] 22% building 4/18 entries 3718/3800 dependencies 598/892 modules
-<s> [webpack.Progress] 22% building 4/18 entries 4187/4300 dependencies 674/944 modules
-<s> [webpack.Progress] 22% building 4/18 entries 4645/4700 dependencies 794/1089 modules
-<s> [webpack.Progress] 22% building 4/18 entries 4800/4859 dependencies 827/1133 modules
-<s> [webpack.Progress] 22% building 4/18 entries 5200/5272 dependencies 918/1249 modules
-<s> [webpack.Progress] 25% building 5/18 entries 5643/5706 dependencies 1152/1336 modules
-<s> [webpack.Progress] 28% building 6/18 entries 5643/5706 dependencies 1153/1336 modules
-<s> [webpack.Progress] 31% building 7/18 entries 5643/5706 dependencies 1154/1336 modules
-<s> [webpack.Progress] 34% building 8/18 entries 5643/5706 dependencies 1155/1336 modules
-<s> [webpack.Progress] 37% building 9/18 entries 5643/5706 dependencies 1156/1336 modules
-<s> [webpack.Progress] 40% building 10/18 entries 5643/5706 dependencies 1157/1336 modules
-<s> [webpack.Progress] 43% building 11/18 entries 5643/5706 dependencies 1158/1336 modules
-<s> [webpack.Progress] 46% building 12/18 entries 5643/5706 dependencies 1159/1336 modules
-<s> [webpack.Progress] 49% building 13/18 entries 5643/5706 dependencies 1160/1336 modules
-<s> [webpack.Progress] 52% building 14/18 entries 5643/5706 dependencies 1161/1336 modules
-<s> [webpack.Progress] 52% building 14/18 entries 6000/6025 dependencies 1258/1410 modules
-<s> [webpack.Progress] 52% building 14/18 entries 6370/6383 dependencies 1431/1500 modules
-<s> [webpack.Progress] 55% building 15/18 entries 6431/6431 dependencies 1473/1519 modules
-<s> [webpack.Progress] 58% building 16/18 entries 6432/6432 dependencies 1499/1519 modules
-<s> [webpack.Progress] 61% building 17/18 entries 6434/6434 dependencies 1519/1520 modules
-<s> [webpack.Progress] 65% building 18/18 entries 6434/6434 dependencies 1520/1520 modules
+<s> [webpack.Progress] 16% building 2/18 entries 1236/1300 dependencies 112/380 modules
+<s> [webpack.Progress] 16% building 2/18 entries 1500/1644 dependencies 155/391 modules
+<s> [webpack.Progress] 16% building 2/18 entries 1650/1789 dependencies 200/408 modules
+<s> [webpack.Progress] 19% building 3/18 entries 1700/1809 dependencies 264/413 modules
+<s> [webpack.Progress] 19% building 3/18 entries 1811/1900 dependencies 275/460 modules
+<s> [webpack.Progress] 19% building 3/18 entries 1981/2400 dependencies 302/473 modules
+<s> [webpack.Progress] 19% building 3/18 entries 2400/2547 dependencies 339/658 modules
+<s> [webpack.Progress] 19% building 3/18 entries 2800/2929 dependencies 369/757 modules
+<s> [webpack.Progress] 22% building 4/18 entries 2900/2932 dependencies 374/785 modules
+<s> [webpack.Progress] 22% building 4/18 entries 3100/3165 dependencies 396/795 modules
+<s> [webpack.Progress] 22% building 4/18 entries 3400/3453 dependencies 442/829 modules
+<s> [webpack.Progress] 22% building 4/18 entries 3900/4053 dependencies 503/912 modules
+<s> [webpack.Progress] 22% building 4/18 entries 4106/4200 dependencies 541/931 modules
+<s> [webpack.Progress] 22% building 4/18 entries 4500/4575 dependencies 778/1031 modules
+<s> [webpack.Progress] 22% building 4/18 entries 4713/4858 dependencies 833/1100 modules
+<s> [webpack.Progress] 22% building 4/18 entries 4805/4900 dependencies 841/1138 modules
+<s> [webpack.Progress] 22% building 4/18 entries 5000/5057 dependencies 894/1211 modules
+<s> [webpack.Progress] 22% building 4/18 entries 5203/5300 dependencies 932/1248 modules
+<s> [webpack.Progress] 25% building 5/18 entries 5717/5741 dependencies 1178/1361 modules
+<s> [webpack.Progress] 28% building 6/18 entries 5717/5741 dependencies 1179/1361 modules
+<s> [webpack.Progress] 31% building 7/18 entries 5717/5741 dependencies 1180/1361 modules
+<s> [webpack.Progress] 34% building 8/18 entries 5717/5741 dependencies 1181/1361 modules
+<s> [webpack.Progress] 37% building 9/18 entries 5717/5741 dependencies 1182/1361 modules
+<s> [webpack.Progress] 40% building 10/18 entries 5717/5741 dependencies 1183/1361 modules
+<s> [webpack.Progress] 43% building 11/18 entries 5717/5741 dependencies 1184/1361 modules
+<s> [webpack.Progress] 46% building 12/18 entries 5717/5741 dependencies 1185/1361 modules
+<s> [webpack.Progress] 49% building 13/18 entries 5717/5741 dependencies 1186/1361 modules
+<s> [webpack.Progress] 52% building 14/18 entries 5717/5741 dependencies 1190/1361 modules
+<s> [webpack.Progress] 52% building 14/18 entries 5900/5918 dependencies 1276/1410 modules
+<s> [webpack.Progress] 52% building 14/18 entries 6377/6400 dependencies 1430/1505 modules
+<s> [webpack.Progress] 55% building 15/18 entries 6429/6433 dependencies 1488/1519 modules
+<s> [webpack.Progress] 58% building 16/18 entries 6449/6449 dependencies 1511/1528 modules
+<s> [webpack.Progress] 61% building 17/18 entries 6449/6449 dependencies 1527/1528 modules
+<s> [webpack.Progress] 65% building 18/18 entries 6449/6449 dependencies 1528/1528 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
 <s> [webpack.Progress] 69% building finish
@@ -593,13 +683,13 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 92% sealing asset processing copy-webpack-plugin
 <s> [webpack.Progress] 92% sealing asset processing PersistentChildCompilerSingletonPlugin
 <s> [webpack.Progress] 92% sealing asset processing TerserPlugin
-info => Manager built (1.43 min)
+info => Manager built (1.25 min)
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.css generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.css generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.2978a80e.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.2978a80e.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.61942431.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.61942431.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.30168e89.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.30168e89.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 747.bad21e52.iframe.bundle.js generate SourceMap
@@ -620,8 +710,8 @@ info => Manager built (1.43 min)
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 899.1322f90f.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 291.97764c0e.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 291.97764c0e.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 795.8327edad.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 795.8327edad.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 460.a8a43434.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 460.a8a43434.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
@@ -630,8 +720,8 @@ info => Manager built (1.43 min)
 <s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.773a21e7.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.773a21e7.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.4bd38f8a.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.4bd38f8a.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.9170c7a6.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.9170c7a6.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 747.3c6724fd.iframe.bundle.js generate SourceMap
@@ -652,8 +742,8 @@ info => Manager built (1.43 min)
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 899.187c6756.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 291.fee5a214.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 291.fee5a214.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 795.f4c863f1.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 795.f4c863f1.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 460.07339309.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 460.07339309.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin resolve sources
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
 <s> [webpack.Progress] 92% sealing asset processing AnyComponentStyleBudgetChecker
@@ -680,7 +770,7 @@ info => Manager built (1.43 min)
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 100% 
 
-info => Preview built (1.65 min)
+info => Preview built (1.5 min)
 WARN /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app-routing.module.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Volumes/BEEMO-SSD/02_WorkFiles/02_ScubboClients/01_Hays/robotron/Finanzmakler/FE-Library/fm-library/fm-library/src/app/app.component.ts is part of the TypeScript compilation but it's unused.
@@ -699,17 +789,17 @@ WARN asset size limit: The following asset(s) exceed the recommended size limit 
 WARN This can impact web performance.
 WARN Assets: 
 WARN   459.d2d87b4f.iframe.bundle.js (586 KiB)
-WARN   795.f4c863f1.iframe.bundle.js (3.48 MiB)
+WARN   460.07339309.iframe.bundle.js (3.58 MiB)
 WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 WARN Entrypoints:
-WARN   main (3.67 MiB)
+WARN   main (3.79 MiB)
 WARN       runtime~main.9170c7a6.iframe.bundle.js
-WARN       795.f4c863f1.iframe.bundle.js
+WARN       460.07339309.iframe.bundle.js
 WARN       main.css
-WARN       main.773a21e7.iframe.bundle.js
+WARN       main.4bd38f8a.iframe.bundle.js
 WARN 
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Output directory: /var/folders/rm/nm3m34h54wq6m7_sj2x428wm0000gn/T/chromatic--15268-RaNvyzyWjDhA
+info => Output directory: /var/folders/rm/nm3m34h54wq6m7_sj2x428wm0000gn/T/chromatic--22666-cI4cpi4iDjBR

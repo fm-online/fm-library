@@ -425,6 +425,250 @@
             }
         },
         {
+            "name": "CounterComponent",
+            "id": "component-CounterComponent-334cfce5587792d3cfa2520a4df67557c74a46b32bbe3a2cfc177dc1ad2fea69850113deab9ebebe5c3dccf0f4a8a4dff23e54a8e1487befe6bd6011a56c1bb6",
+            "file": "src/app/elements/counter/counter.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-counter",
+            "styleUrls": [
+                "./counter.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./counter.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "light",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "max",
+                    "defaultValue": "10",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "min",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "name",
+                    "defaultValue": "'test'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "placeholder",
+                    "defaultValue": "'0 00'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "step",
+                    "defaultValue": "1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "counterValue",
+                    "defaultValue": "new EventEmitter<number>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "EventEmitter<any>"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "faMinus",
+                    "defaultValue": "faMinus",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "faPlus",
+                    "defaultValue": "faPlus",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "count",
+                    "args": [
+                        {
+                            "name": "element",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "type",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "min",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "max",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "step",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 26,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "element",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "type",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "min",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "max",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "step",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';\n\n@Component({\n  selector: 'app-counter',\n  templateUrl: './counter.component.html',\n  styleUrls: ['./counter.component.scss']\n})\nexport class CounterComponent implements OnInit {\n  @Input() name: string = 'test';\n  @Input() placeholder: string = '0 00';\n  @Input() value: number = 0;\n  @Input() step: number = 1;\n  @Input() min: number = 0;\n  @Input() max: number = 10;\n  @Input() light: boolean = false;\n  faMinus = faMinus\n  faPlus = faPlus\n  @Output() public counterValue:EventEmitter<any> = new EventEmitter<number>();\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  count(element: any, type: string, min: number, max: number, step: number) {\n    let newCount, oldCount;\n\n    if (element.value !== '') {\n      oldCount = parseInt(element.value);\n      if (type === 'up') {\n        if(element.value < max) {\n          newCount = oldCount + step;\n        } else {\n          newCount = max\n        }\n        element.value = newCount;\n      } else {\n        if(element.value > min) {\n          newCount = oldCount - step;\n        } else {\n          newCount = min\n        }\n        element.value = newCount;\n      }\n    } else {\n      newCount = min\n      element.value = newCount;\n    }\n\n    this.counterValue.emit(newCount);\n    console.log(element.value)\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import 'src/assets/styles/colors';\n@import 'src/assets/styles/fonts';  \n\n.da-counter-wrapper {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 155px;\n    height: 42px;\n\n    .da-counter {\n        font-family: $font;\n        width: 65px;\n        height: 42px;\n        border-radius: 21px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        background-color: #fff;\n        box-shadow: 0 3px 5px $shadow-base-color;\n\n        &.light {\n            box-shadow: 0 3px 5px $shadow-secondary-color;\n        }\n    \n        input {\n            border: none;\n            text-align: center;\n            width: 80%;\n        }\n    }\n    .da-counter-btn {\n        color: $button-base-color;\n        border: none;\n        width: 30px;\n        height: 30px;\n        border-radius: 15px;\n        background-color: #fff;\n        box-shadow: 0 3px 5px $shadow-base-color;\n        cursor: pointer;\n\n        &.light {\n            box-shadow: 0 3px 5px $shadow-secondary-color;\n        }\n\n        &:hover {\n            background-color: #ccc;\n        }\n        &:active {\n            background-color: $button-base-color;\n            color: #fff;\n\n            &.light {\n                background-color: $button-secondary-color;\n                color: $button-base-color;\n            }\n        }\n    }\n}\n\n\n// * {\n//     outline: 1px solid red;\n// }",
+                    "styleUrl": "./counter.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 19
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"da-counter-wrapper\">\n    <button \n        type=\"button\" \n        class=\"da-counter-btn left\" \n        (click)=\"count(counter, 'down', min, max, step)\"\n        [ngClass]=\"{'light' : light}\"\n    >\n        <fa-icon class=\"da-switch-icon\" [icon]=\"faMinus\"></fa-icon>\n    </button>\n    <label class=\"da-counter\" [ngClass]=\"{'light' : light}\">\n        <input\n        type=\"string\" \n        [placeholder]=\"placeholder\"\n        [step]=step\n        [min]=min\n        [max]=max\n        #counter\n        [name]=\"name\"\n        [value]=value />\n    </label>\n    <button \n        type=\"button\" \n        class=\"da-counter-btn right\" \n        (click)=\"count(counter, 'up', min, max, step)\"\n        [ngClass]=\"{'light' : light}\"\n    >\n        <fa-icon class=\"da-switch-icon\" [icon]=\"faPlus\"></fa-icon>\n    </button>\n</div>\n"
+        },
+        {
             "name": "HeaderComponent",
             "id": "component-HeaderComponent-0cd94fbc94a83702e45bf987cb3b3f9074d69cd27e6ca2e4fbac0dc5b5047bd4dc3a9ce8a77f6bd9ab7ae3e6ca8e49b34bed529ca0da0fa428fec544a0324870",
             "file": "src/stories/header.component.ts",
@@ -574,13 +818,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-0380eb99dc933726a298e8346c6bccd22e1b5cc04b104327b1338c34576989e47a18332184e6619667ea44cdcc8415094943c57e1610f717c21a145170f5c250",
+            "id": "module-AppModule-2cd4d87c1b1bc6ce93fd387fdd899ff3dfec145d47cbadda55ee734187e606da9f74f50f7e82b502dfb43acd4418314cf4b8d63e62b6831535765ad31fd1e70a",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    BrowserAnimationsModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\nimport { CounterComponent } from './elements/counter/counter.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    CounterComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule,\n    BrowserAnimationsModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -591,6 +835,9 @@
                     "elements": [
                         {
                             "name": "AppComponent"
+                        },
+                        {
+                            "name": "CounterComponent"
                         }
                     ]
                 },
@@ -731,6 +978,16 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/counter/counter.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "environment",
@@ -875,11 +1132,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/shared/avatar/avatar.stories.ts",
+                "file": "src/app/elements/counter/counter.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<AvatarComponent>",
-                "defaultValue": "(args: AvatarComponent) => ({\n  props: args\n})"
+                "type": "Story<CounterComponent>",
+                "defaultValue": "(args: CounterComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -890,6 +1147,16 @@
                 "deprecationMessage": "",
                 "type": "Story<AvatarListComponent>",
                 "defaultValue": "(args: AvatarListComponent) => ({\n  props: args\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/avatar/avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<AvatarComponent>",
+                "defaultValue": "(args: AvatarComponent) => ({\n  props: args\n})"
             }
         ],
         "functions": [],
@@ -959,6 +1226,28 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
+                }
+            ],
+            "src/app/elements/counter/counter.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/counter/counter.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/counter/counter.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CounterComponent>",
+                    "defaultValue": "(args: CounterComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/environments/environment.prod.ts": [
@@ -1121,7 +1410,7 @@
         ]
     },
     "coverage": {
-        "count": 3,
+        "count": 2,
         "status": "low",
         "files": [
             {
@@ -1131,6 +1420,35 @@
                 "name": "AppComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/counter/counter.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CounterComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/14",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/counter/counter.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/counter/counter.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
