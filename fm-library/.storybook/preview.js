@@ -1,6 +1,18 @@
-import { setCompodocJson } from "@storybook/addon-docs/angular";
+import { addParameters } from '@storybook/angular'
+import { setCompodocJson, DocsContainer, DocsPage } from "@storybook/addon-docs/angular";
+
 import docJson from "../documentation.json";
+
+
 setCompodocJson(docJson);
+
+addParameters({
+  layout: 'centered',
+  docs: {
+    container: DocsContainer,
+    page: DocsPage
+  }
+})
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

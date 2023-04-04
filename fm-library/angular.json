@@ -108,7 +108,13 @@
           "builder": "@storybook/angular:start-storybook",
           "options": {
             "browserTarget": "fm-library:build",
-            "port": 4400
+            "port": 4400,
+            "assets": [
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ]
           }
         },
         "build-storybook": {
