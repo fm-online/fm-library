@@ -6,7 +6,6 @@ import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontaweso
 import { faCircleCheck, faCircleInfo, faCircleXmark, faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
 import { APP_INITIALIZER } from '@angular/core';
 import { MainPipe } from '../../../pipes/pipe.module';
-import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -18,9 +17,7 @@ export default {
       imports: [
         FontAwesomeModule, 
         MainPipe, 
-        NgbTooltipModule,
-        AngularSvgIconModule.forRoot(),
-        HttpClientModule],
+        NgbTooltipModule],
       providers: [
         {
           provide: APP_INITIALIZER,
@@ -49,7 +46,7 @@ export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/angular/writing-stories/args
 Default.args = {
   label: 'das Label',
-  name: 'dieId',
+  name: 'id',
   value: '',
   type: 'text',
   placeholder: '0,00',
@@ -57,6 +54,64 @@ Default.args = {
   touched: false,
   error: false,
   light: false,
+  errorText: 'die Fehlermeldung',
+  info: false,
+  infoText: 'info Text',
+  infoHeader: 'info Überschrift',
+};
+
+export const withInfo = Template.bind({});
+// More on args: https://storybook.js.org/docs/angular/writing-stories/args
+withInfo.args = {
+  label: 'das Label',
+  name: 'id',
+  value: '',
+  type: 'text',
+  placeholder: '0,00',
+  unit: '€',
+  touched: false,
+  error: false,
+  light: false,
+  faCircleInfo: faCircleInfo,
+  errorText: 'die Fehlermeldung',
+  info: true,
+  infoText: 'info Text',
+  infoHeader: 'info Überschrift',
+};
+
+export const error = Template.bind({});
+// More on args: https://storybook.js.org/docs/angular/writing-stories/args
+error.args = {
+  label: 'das Label',
+  name: 'id',
+  value: '',
+  type: 'text',
+  placeholder: '0,00',
+  unit: '€',
+  touched: true,
+  error: true,
+  light: false,
+  faCircleExclamation: faCircleExclamation,
+  faCircleXmark: faCircleXmark,
+  errorText: 'die Fehlermeldung',
+  info: false,
+  infoText: 'info Text',
+  infoHeader: 'info Überschrift',
+};
+
+export const success = Template.bind({});
+// More on args: https://storybook.js.org/docs/angular/writing-stories/args
+success.args = {
+  label: 'das Label',
+  name: 'id',
+  value: '1.100,00',
+  type: 'text',
+  placeholder: '0,00',
+  unit: '€',
+  touched: true,
+  error: false,
+  light: false,
+  faCircleCheck: faCircleCheck,
   errorText: 'die Fehlermeldung',
   info: false,
   infoText: 'info Text',

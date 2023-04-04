@@ -1224,7 +1224,7 @@
         },
         {
             "name": "TileComponent",
-            "id": "component-TileComponent-cb729303d1a547265b204e0450742791b0c7c2ead713b81c7abefc537894862914f9da8189ad2aee5e44ac32e59ec8530df5ba6ed8a1372aa367ea68b37fcab9",
+            "id": "component-TileComponent-25a3bd50c85affab92a568c1387057fefaedbf5444ab2c7a6fb9fefc3c292a1146e81303726a4e088d7a01e412807c44e89a585f3a804867c5ceac0bc22ad1fb",
             "file": "src/app/elements/tiles/tile/tile.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1395,7 +1395,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 40,
+                    "line": 41,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -1456,11 +1456,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, TemplateRef } from '@angular/core';\nimport { DomSanitizer} from '@angular/platform-browser';\nimport { faCircleCheck, faCircleExclamation, faCircleXmark } from '@fortawesome/free-solid-svg-icons';\n\n@Component({\n  selector: 'app-tile',\n  templateUrl: './tile.component.html',\n  styleUrls: ['./tile.component.scss']\n})\nexport class TileComponent implements OnInit, OnChanges {\n  @Input() label: string = 'label';\n  @Input() name: string = 'name';\n  @Input() checked: boolean = false;\n  @Input() value: string = 'value';\n  @Input() localValue: string = 'localValue';\n  @Input() state: string = 'state';\n  @Input() image: any;\n  @Input() light: boolean = true;\n  @Input() content!: TemplateRef<any>;\n  expanded!: boolean;\n  localImage: any;\n  faCheck = faCircleCheck;\n  faAttention = faCircleExclamation;\n  faError = faCircleXmark;\n  @Output() public checkboxValue:EventEmitter<any> = new EventEmitter<boolean>();\n\n  constructor(private sanitizer: DomSanitizer) { this.localImage = this.sanitizer.bypassSecurityTrustHtml(this.image) }\n\n  ngOnInit(): void {\n    console.log('tile', this.content)\n  }\n\n  ngOnChanges(changes: SimpleChanges) {\n    console.log(changes)\n    if(changes && changes['localValue']) {\n      this.expanded = this.localValue !== this.value ? false : true;\n    }\n  }\n\n  getValue(e: any) {\n    console.log('tile', e.srcElement.value, e.srcElement.checked);\n    this.checkboxValue.emit(e.srcElement.value);\n  }\n\n}",
+            "sourceCode": "import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, TemplateRef } from '@angular/core';\nimport { DomSanitizer} from '@angular/platform-browser';\nimport { faCircleCheck, faCircleExclamation, faCircleXmark } from '@fortawesome/free-solid-svg-icons';\n\n@Component({\n  selector: 'app-tile',\n  templateUrl: './tile.component.html',\n  styleUrls: ['./tile.component.scss']\n})\nexport class TileComponent implements OnInit, OnChanges {\n  @Input() label: string = 'label';\n  @Input() name: string = 'name';\n  @Input() checked: boolean = false;\n  @Input() value: string = 'value';\n  @Input() localValue: string = 'localValue';\n  @Input() state: string = 'state';\n  @Input() image: any;\n  @Input() light: boolean = true;\n  @Input() content!: TemplateRef<any>;\n  expanded!: boolean;\n  localImage: any;\n  faCheck = faCircleCheck;\n  faAttention = faCircleExclamation;\n  faError = faCircleXmark;\n  @Output() public checkboxValue:EventEmitter<any> = new EventEmitter<boolean>();\n\n  constructor(private sanitizer: DomSanitizer) { this.localImage = this.sanitizer.bypassSecurityTrustHtml(this.image) }\n\n  ngOnInit(): void {\n    console.log('tile', this.content)\n  }\n\n  ngOnChanges(changes: SimpleChanges) {\n    console.log(changes)\n    if(changes && changes['localValue']) {\n      this.expanded = this.localValue !== this.value ? false : true;\n      console.log(this.expanded)\n    }\n  }\n\n  getValue(e: any) {\n    console.log('tile', e.srcElement.value, e.srcElement.checked);\n    this.checkboxValue.emit(e.srcElement.value);\n  }\n\n}",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../../../../styles.scss\"; \n\n.da-tile-single {\n    font-family: $font;\n\n    .da-tile {\n        position: relative;\n        display: inline-block;\n        border-radius: 25px;\n        border: 1px solid transparent;\n        width: 242px;\n        min-height: 222px;\n        background-color: $radiobutton-base-color;\n        box-shadow: 0 3px 5px $shadow-base-color;\n        transition: all 0.25s ease-in-out;\n        padding-bottom: 14px;\n        cursor: pointer;\n\n        &:hover {\n            border: 1px solid $button-base-color;\n        }\n\n        &.expanded {\n            background-color: $button-base-color;\n            border: 1px solid $button-base-color;\n        }\n     \n        .da-tile-icon {\n\n            margin-left: 15px;\n            top: 15px;\n            position: absolute;\n            z-index: 1;\n            font-size: 1.5rem;\n            display: none;\n\n            &.green {\n                color: $success-color;\n            }\n\n            &.yellow {\n                color: $attention-color;\n            }\n\n            &.red {\n                color: $warning-base-color;\n            }\n        }\n\n        .da-tile-image {\n            width: 244px;\n            height: 90px;\n            fill: $t4-base-color;\n            display: flex;\n            position: relative;\n            z-index: 1;\n            margin-bottom: 5px;\n            justify-content: center;\n            pointer-events: none;\n\n        }\n    \n        input {\n            opacity: 0;\n            width: 0;\n            height: 0;\n    \n            &:checked ~ .da-tile-icon {\n                display: block;\n            }\n\n            &:checked ~ .da-tile-image {\n                fill: $t4-secondary-color;\n            }\n    \n            &:checked ~ .da-tile-label {\n                color: $t4-secondary-color;\n            }\n        }\n\n        .da-tile-label {\n            font-size: 20px;\n            color: $t4-base-color;\n            height: 100px;\n            display: flex;\n            z-index: 1;\n            position: relative;\n            align-items: center;\n            text-align: center;\n            justify-content: center;\n            width: 214px;\n            margin: 0 15px 15px;\n            overflow: hidden;\n            pointer-events: none;\n\n        }\n    }\n\n    .da-tile-expanded {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n        transition: all 0.25s ease-in-out;\n    }\n}\n\n",
+                    "data": "@import \"../../../../styles.scss\"; \n\n.da-tile-single {\n    font-family: $font;\n\n    .da-tile {\n        position: relative;\n        display: inline-block;\n        border-radius: 25px;\n        border: 1px solid transparent;\n        width: 242px;\n        min-height: 222px;\n        background-color: $radiobutton-base-color;\n        box-shadow: 0 3px 5px $shadow-base-color;\n        transition: all 0.25s ease-in-out;\n        padding-bottom: 14px;\n        cursor: pointer;\n\n        &:hover {\n            border: 1px solid $button-base-color;\n        }\n\n        &.expanded {\n            background-color: $button-base-color;\n            border: 1px solid $button-base-color;\n        }\n     \n        .da-tile-icon {\n\n            margin-left: 15px;\n            top: 15px;\n            position: absolute;\n            z-index: 1;\n            font-size: 1.5rem;\n            display: none;\n\n            &.green {\n                color: $success-color;\n            }\n\n            &.yellow {\n                color: $attention-color;\n            }\n\n            &.red {\n                color: $warning-base-color;\n            }\n        }\n\n        .da-tile-image {\n            width: 244px;\n            height: 90px;\n            color: $t4-base-color;\n            display: flex;\n            position: relative;\n            z-index: 1;\n            margin-bottom: 5px;\n            justify-content: center;\n            pointer-events: none;\n            font-size: 90px;\n        }\n    \n        input {\n            opacity: 0;\n            width: 0;\n            height: 0;\n    \n            &:checked ~ .da-tile-icon {\n                display: block;\n            }\n\n            &:checked ~ .da-tile-image {\n                color: $t4-secondary-color;\n            }\n    \n            &:checked ~ .da-tile-label {\n                color: $t4-secondary-color;\n            }\n        }\n\n        .da-tile-label {\n            font-size: 20px;\n            color: $t4-base-color;\n            height: 100px;\n            display: flex;\n            z-index: 1;\n            position: relative;\n            align-items: center;\n            text-align: center;\n            justify-content: center;\n            width: 214px;\n            margin: 0 15px 15px;\n            overflow: hidden;\n            pointer-events: none;\n\n        }\n    }\n\n    .da-tile-expanded {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n        transition: all 0.25s ease-in-out;\n    }\n}\n\n",
                     "styleUrl": "./tile.component.scss"
                 }
             ],
@@ -1495,7 +1495,7 @@
                 "OnInit",
                 "OnChanges"
             ],
-            "templateData": "<div class=\"da-tile-single\">\n    <label class=\"da-tile\" [ngClass]=\"{'expanded' : expanded}\">\n        <input \n            type=\"radio\" \n            (change)=\"getValue($event)\" \n            [checked]=\"checked\"\n            [name]=\"name\"\n            [value]=\"value\"\n        >\n        <fa-icon class=\"da-tile-icon green\" *ngIf=\"state === 'success'\" [icon]=\"faCheck\"></fa-icon>\n        <fa-icon class=\"da-tile-icon yellow\" *ngIf=\"state === 'warning'\" [icon]=\"faAttention\"></fa-icon>\n        <fa-icon class=\"da-tile-icon red\" *ngIf=\"state === 'error'\" [icon]=\"faError\"></fa-icon>\n        <svg-icon \n            [src]=\"image\" \n            class=\"da-tile-image\" \n            [svgClass]=\"\"\n            [applyClass]=\"false\">\n        </svg-icon>\n        <div class=\"da-tile-label\">{{label}}</div>\n        <div *ngIf=\"expanded\" class=\"da-tile-expanded\" [ngClass]=\"{'light' : light}\">\n            <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n        </div>\n    </label>\n</div>"
+            "templateData": "<div class=\"da-tile-single\">\n    <label class=\"da-tile\" [ngClass]=\"{'expanded' : expanded}\">\n        <input \n            type=\"radio\" \n            (change)=\"getValue($event)\" \n            [checked]=\"checked\"\n            [name]=\"name\"\n            [value]=\"value\"\n        >\n        <fa-icon class=\"da-tile-icon green\" *ngIf=\"state === 'success'\" [icon]=\"faCheck\"></fa-icon>\n        <fa-icon class=\"da-tile-icon yellow\" *ngIf=\"state === 'warning'\" [icon]=\"faAttention\"></fa-icon>\n        <fa-icon class=\"da-tile-icon red\" *ngIf=\"state === 'error'\" [icon]=\"faError\"></fa-icon>\n        <fa-icon class=\"da-tile-image\" [icon]=\"image\"></fa-icon>\n        <div class=\"da-tile-label\">{{label}}</div>\n        <div *ngIf=\"expanded\" class=\"da-tile-expanded\" [ngClass]=\"{'light' : light}\">\n            <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n        </div>\n    </label>\n</div>"
         },
         {
             "name": "TileGroupComponent",
@@ -2264,7 +2264,27 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/elements/tiles/tile/tile.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2285,26 +2305,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/elements/tiles/tile/tile.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2473,16 +2473,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/elements/counter/counter.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<CounterComponent>",
-                "defaultValue": "(args: CounterComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/shared/avatar/avatar.storiesAlt.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2503,6 +2493,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/elements/counter/counter.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CounterComponent>",
+                "defaultValue": "(args: CounterComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/elements/inputs/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2513,11 +2513,31 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/elements/tiles/tile/tile.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TileComponent>",
+                "defaultValue": "(args: TileComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<TileTextComponent>",
                 "defaultValue": "(args: TileTextComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TileGroupComponent>",
+                "defaultValue": "(args: TileGroupComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2540,26 +2560,6 @@
                 "defaultValue": "(args: ToggleCheckboxComponent) => ({\n  props: args,\n})"
             },
             {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/elements/tiles/tile/tile.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TileComponent>",
-                "defaultValue": "(args: TileComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TileGroupComponent>",
-                "defaultValue": "(args: TileGroupComponent) => ({\n  props: args,\n})"
-            },
-            {
                 "name": "testTiles",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2567,7 +2567,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\n  {\n    'label': 'label1',\n    'name': 'name',\n    'state': 'warning',\n    'checked': false,\n    'image': '/assets/images/icons/test-icon.svg',\n    'value': 'value1'\n  },\n  {\n    'label': 'label2',\n    'name': 'name',\n    'state': 'error',\n    'checked': false,\n    'image': '/assets/images/icons/test-icon2.svg',\n    'value': 'value2'\n  },\n  {\n    'label': 'label3',\n    'name': 'name',\n    'state': 'success',\n    'checked': false,\n    'image': '/assets/images/icons/test-icon.svg',\n    'value': 'value3'\n  }\n]"
+                "defaultValue": "[\n  {\n    'label': 'label1',\n    'name': 'name',\n    'state': 'success',\n    'checked': false,\n    'image': faHouseCircleCheck,\n    'value': 'value1'\n  },\n  {\n    'label': 'label2',\n    'name': 'name',\n    'state': 'warning',\n    'checked': false,\n    'image': faHouseCircleExclamation,\n    'value': 'value2'\n  },\n  {\n    'label': 'label3',\n    'name': 'name',\n    'state': 'error',\n    'checked': false,\n    'image': faHouseCircleXmark,\n    'value': 'value3'\n  }\n]"
             }
         ],
         "functions": [],
@@ -2703,6 +2703,28 @@
                     "defaultValue": "(args: InputComponent) => ({\n  props: args,\n})"
                 }
             ],
+            "src/app/elements/tiles/tile/tile.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/tiles/tile/tile.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/tiles/tile/tile.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TileComponent>",
+                    "defaultValue": "(args: TileComponent) => ({\n  props: args,\n})"
+                }
+            ],
             "src/app/elements/text/tile-text/tile-text.stories.ts": [
                 {
                     "name": "Default",
@@ -2723,6 +2745,38 @@
                     "deprecationMessage": "",
                     "type": "Story<TileTextComponent>",
                     "defaultValue": "(args: TileTextComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/elements/tiles/tile-group/tile-group.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TileGroupComponent>",
+                    "defaultValue": "(args: TileGroupComponent) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "testTiles",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\n  {\n    'label': 'label1',\n    'name': 'name',\n    'state': 'success',\n    'checked': false,\n    'image': faHouseCircleCheck,\n    'value': 'value1'\n  },\n  {\n    'label': 'label2',\n    'name': 'name',\n    'state': 'warning',\n    'checked': false,\n    'image': faHouseCircleExclamation,\n    'value': 'value2'\n  },\n  {\n    'label': 'label3',\n    'name': 'name',\n    'state': 'error',\n    'checked': false,\n    'image': faHouseCircleXmark,\n    'value': 'value3'\n  }\n]"
                 }
             ],
             "src/app/elements/toggle/toggle/toggle.stories.ts": [
@@ -2767,60 +2821,6 @@
                     "deprecationMessage": "",
                     "type": "Story<ToggleCheckboxComponent>",
                     "defaultValue": "(args: ToggleCheckboxComponent) => ({\n  props: args,\n})"
-                }
-            ],
-            "src/app/elements/tiles/tile/tile.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/tiles/tile/tile.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/tiles/tile/tile.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<TileComponent>",
-                    "defaultValue": "(args: TileComponent) => ({\n  props: args,\n})"
-                }
-            ],
-            "src/app/elements/tiles/tile-group/tile-group.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<TileGroupComponent>",
-                    "defaultValue": "(args: TileGroupComponent) => ({\n  props: args,\n})"
-                },
-                {
-                    "name": "testTiles",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "[]",
-                    "defaultValue": "[\n  {\n    'label': 'label1',\n    'name': 'name',\n    'state': 'warning',\n    'checked': false,\n    'image': '/assets/images/icons/test-icon.svg',\n    'value': 'value1'\n  },\n  {\n    'label': 'label2',\n    'name': 'name',\n    'state': 'error',\n    'checked': false,\n    'image': '/assets/images/icons/test-icon2.svg',\n    'value': 'value2'\n  },\n  {\n    'label': 'label3',\n    'name': 'name',\n    'state': 'success',\n    'checked': false,\n    'image': '/assets/images/icons/test-icon.svg',\n    'value': 'value3'\n  }\n]"
                 }
             ],
             "src/environments/environment.prod.ts": [
