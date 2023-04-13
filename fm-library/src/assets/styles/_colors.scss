@@ -21,7 +21,8 @@
     --warning-secondary-color: 255,255,255; /* error messages */
     --attention-color: 255, 231, 122; /* error messages  */
     --success-color: 2, 212, 174; /* erfolgreich übertragen */
-    --error-background: 254, 202, 211; /* erfolgreich übertragen */
+    --error-background: 254, 202, 211; /* hintergrund error */
+    --tab-background: 124, 143, 175; /* hintergrund error */
     --body-secondary-color: 32, 56, 100; /* hintergrund body overlay */
     --header-secondary-color: 255,255,255; /* hintergrund header overlay */
     --shadow-secondary-color: 212,212,212, 0.5; /* schattenfarbe overlay */
@@ -35,6 +36,7 @@
 // pink: #FECAD3 / rgb(254, 202, 211)
 
 // dunkelblau: #203864 / rgb(32, 56, 100)
+// blaugrau: #7C8FAF / rgb(124, 143, 175)
 // blau: #C0D1E1 / rgb(192, 209, 225)
 // hellblau: #DDE7EE / rgb(221, 231, 238)
 
@@ -73,6 +75,7 @@ $warning-secondary-color: rgb(var(--warning-secondary-color));
 $attention-color: rgb(var(--attention-color));
 $success-color: rgb(var(--success-color)); //done
 $info-secondary-color: rgb(var(--info-secondary-color));
+$tab-background: rgb(var(--tab-background));
 
 // Transparencies
 $body-base-color-90: rgba(var(--body-base-color),0.9);

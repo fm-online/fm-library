@@ -51,7 +51,8 @@
     
         .da-switch-slider:before {
             position: absolute;
-            content: "x";
+            content: '\f00d';
+            font: var(--fa-font-solid);
             color: #fff;
             left: 25px;
             display: flex;

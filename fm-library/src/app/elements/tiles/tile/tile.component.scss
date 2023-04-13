@@ -25,28 +25,36 @@
             border: 1px solid $button-base-color;
         }
      
-        .da-tile-icon {
+        .da-tile-icon-wrapper {
+                margin-left: 15px;
+                top: 15px;
+                position: absolute;
+                z-index: 1;
+                font-size: 1.5rem;
+                background: #fff;
+                border-radius: 20px;
+                box-shadow: 0 3px 5px #000;
+                width: 20px;
+                height: 20px;
+                display: none;
+            .da-tile-icon {
+                position: absolute;
+                top: -4px;
+                left: -1px;
 
-            margin-left: 15px;
-            top: 15px;
-            position: absolute;
-            z-index: 1;
-            font-size: 1.5rem;
-            display: none;
+                &.green {
+                    color: $success-color;
+                }
 
-            &.green {
-                color: $success-color;
-            }
+                &.yellow {
+                    color: $attention-color;
+                }
 
-            &.yellow {
-                color: $attention-color;
-            }
-
-            &.red {
-                color: $warning-base-color;
+                &.red {
+                    color: $warning-base-color;
+                }
             }
         }
-
         .da-tile-image {
             width: 244px;
             height: 90px;
@@ -65,7 +73,7 @@
             width: 0;
             height: 0;
     
-            &:checked ~ .da-tile-icon {
+            &:checked ~ .da-tile-icon-wrapper {
                 display: block;
             }
 

@@ -1,5 +1,5 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/angular/types-6-0';
+import { Meta, StoryObj } from '@storybook/angular/types-6-0';
 import { moduleMetadata} from '@storybook/angular';
 import {ToggleComponent} from './toggle.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -17,7 +17,7 @@ export default {
           provide: APP_INITIALIZER,
           useFactory: (iconLibrary: FaIconLibrary) => async() => {
             // Add any icons needed here:
-            iconLibrary.addIcons(faCircleCheck);
+            iconLibrary.addIcons();
           },
           // When using a factory provider you need to explicitly specify its dependencies.
           deps: [FaIconLibrary],
@@ -28,19 +28,36 @@ export default {
   ],
 } as Meta;
 
-// More on component templates: https://storybook.js.org/docs/angular/writing-stories/introduction#using-args
-const Template: Story<ToggleComponent> = (args: ToggleComponent) => ({
-  props: args,
-});
+type Story = StoryObj<ToggleComponent>;
 
-export const Default = Template.bind({});
-// More on args: https://storybook.js.org/docs/angular/writing-stories/args
-Default.args = {
-  label1: 'Ja',
-  label2: 'Nein',
-  value1: 'true',
-  value2: 'false',
-  name: 'name',
-  light: false,
+// More on component templates: https://storybook.js.org/docs/angular/writing-stories/introduction#using-args
+export const Default: Story = {
+  args: {
+    label1: 'Ja',
+    label2: 'Nein',
+    value1: 'true',
+    value2: 'false',
+    name: 'name',
+    light: false,
+  },
+};
+
+export const Dark: Story = {
+  args: {
+    label1: 'Ja',
+    label2: 'Nein',
+    value1: 'true',
+    value2: 'false',
+    name: 'name',
+    light: true,
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dunkel',
+      values: [
+        { name: 'dunkel', value: '#203864' },
+      ],
+    },
+  },
 };
 

@@ -1,7 +1,7 @@
 <div class="da-input-single">
     <div class="da-input-label" [ngClass]="{'light' : light}">{{label}}</div>
     <label class="da-input">
-        <div class="da-input-icons" *ngIf="touched">
+        <div class="da-input-icons" *ngIf="touched" [ngClass]="{'error' : error}">
             <fa-icon 
                 *ngIf="!error" 
                 class="da-input-icon-green" 
@@ -25,7 +25,7 @@
             #target
         >
         <div class="da-input-unit">{{unit}}</div>
-        <div class="da-input-info-button" *ngIf="info">
+        <div class="da-input-info-button" *ngIf="info" [ngClass]="{'light' : light}">
             <fa-icon class="da-input-info-icon" [icon]="faCircleInfo"></fa-icon>
         </div>
     </label>
@@ -33,7 +33,9 @@
         <div class="da-tooltip-arrow">
             <div class="da-arrow-up" [ngClass]="{'light' : light}"></div>
         </div>
-        <fa-icon class="da-input-error-icon" [icon]="faCircleExclamation"></fa-icon>
+        <div class="da-input-error-icon-wrapper" [ngClass]="{'light' : light}">
+            <fa-icon class="da-input-error-icon" [icon]="faCircleExclamation"></fa-icon>
+        </div>
         <span>{{errorText}}</span>
     </div>
 </div>

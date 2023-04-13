@@ -575,6 +575,142 @@
             }
         },
         {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-1a81edf79df28c5656045f85817f2858c28ce8bdb20fc4d4f9f06e87877e9ab9050270d48a2477ac08f05e7a5901f3d9f9cbda7dc8db086c5dddf3c264e85c8c-1",
+            "file": "src/app/elements/buttons/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button",
+            "styleUrls": [
+                "./button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "icon",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "any",
+                    "decorators": []
+                },
+                {
+                    "name": "iconButton",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "iconLeft",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "any",
+                    "decorators": []
+                },
+                {
+                    "name": "iconRight",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "any",
+                    "decorators": []
+                },
+                {
+                    "name": "light",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "buttonValue",
+                    "defaultValue": "new EventEmitter<boolean>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "EventEmitter<any>"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "getValue",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\n@Component({\n  selector: 'app-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss']\n})\nexport class ButtonComponent implements OnInit {\n  @Input() iconButton: boolean = false;\n  @Input() light: boolean = true;\n  @Input() value: string = '';\n  @Input() icon: any;\n  @Input() iconLeft: any;\n  @Input() iconRight: any;\n  @Output() public buttonValue:EventEmitter<any> = new EventEmitter<boolean>();\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  getValue() {\n    this.buttonValue.emit(true);\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../../../../styles.scss\"; \n\n.da-button-single {\n    font-family: $font;\n\n    button {\n        width: 160px;\n        height: 50px;\n        border: 1px solid $button-base-color;\n        color: $button-base-color;\n        font-size: $t2-base-size;\n        border-radius: 25px 25px 25px 0;\n        background: transparent;\n        display: flex;\n        justify-items: space-between;\n        align-items: center;\n        padding: 0 5px;\n        cursor: pointer;\n        -webkit-transition: 0.4s;\n        transition: 0.4s;\n\n        &.light {\n            border: 1px solid $input-secondary-color;\n            color: $input-secondary-color;\n        }\n\n        &:hover,\n        &:active {\n            border: 1px solid $button-base-color;\n            background: $button-base-color;\n            color: $t2-secondary-color;\n\n            &.light {\n                border: 1px solid $input-secondary-color;\n                background: $input-secondary-color;\n                color: $t2-base-color;\n            }\n        }\n\n        &:active {\n            padding: 0;\n        }\n\n        .da-button-label {\n            width: 100%;\n            text-align: center;\n            display: block;\n        }\n\n        .da-button-icon {\n            font-size: 14px;\n            -webkit-transition: 0.4s;\n            transition: 0.4s;\n\n            &.left {\n                margin-left: 10px;\n            }\n\n            &.right {\n                margin-right: 10px;\n            }\n\n            &.main {\n                font-size: 28px;\n            }\n        }\n    }\n}",
+                    "styleUrl": "./button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 15
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "ButtonComponent-1",
+            "templateData": "<div class=\"da-button-single\">\n    <button \n        (click)=\"getValue()\" \n        [ngClass]=\"[light ? 'light' : '', iconButton ? 'short' : '']\" \n        #target\n    >\n        <fa-icon \n            *ngIf=\"iconLeft\"\n            class=\"da-button-icon left\" \n            [icon]=\"iconLeft\" \n        ></fa-icon>\n        <span class=\"da-button-label\" *ngIf=\"value\">{{ value }}</span> \n        <fa-icon \n            *ngIf=\"icon\"\n            class=\"da-button-icon main\" \n            [icon]=\"icon\" \n        ></fa-icon>\n        <fa-icon \n            *ngIf=\"iconRight\"\n            class=\"da-button-icon right\" \n            [icon]=\"iconRight\" \n        ></fa-icon>\n    </button>\n</div>\n"
+        },
+        {
             "name": "CounterComponent",
             "id": "component-CounterComponent-334cfce5587792d3cfa2520a4df67557c74a46b32bbe3a2cfc177dc1ad2fea69850113deab9ebebe5c3dccf0f4a8a4dff23e54a8e1487befe6bd6011a56c1bb6",
             "file": "src/app/elements/counter/counter.component.ts",
@@ -800,7 +936,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../../../styles.scss\"; \n\n.da-counter-wrapper {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 155px;\n    height: 42px;\n\n    .da-counter {\n        font-family: $font;\n        width: 65px;\n        height: 42px;\n        border-radius: 21px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        background-color: #fff;\n        box-shadow: 0 3px 5px $shadow-base-color;\n\n        &.light {\n            box-shadow: 0 3px 5px $shadow-secondary-color;\n        }\n    \n        input {\n            border: none;\n            text-align: center;\n            width: 80%;\n        }\n    }\n    .da-counter-btn {\n        color: $button-base-color;\n        border: none;\n        width: 30px;\n        height: 30px;\n        border-radius: 15px;\n        background-color: #fff;\n        box-shadow: 0 3px 5px $shadow-base-color;\n        cursor: pointer;\n\n        &.light {\n            box-shadow: 0 3px 5px $shadow-secondary-color;\n        }\n\n        &:hover {\n            background-color: #ccc;\n        }\n        &:active {\n            background-color: $button-base-color;\n            color: #fff;\n\n            &.light {\n                background-color: $button-secondary-color;\n                color: $button-base-color;\n            }\n        }\n    }\n}\n\n\n// * {\n//     outline: 1px solid red;\n// }",
+                    "data": "@import \"../../../styles.scss\"; \n\n.da-counter-wrapper {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 155px;\n    height: 42px;\n\n    .da-counter {\n        font-family: $font;\n        width: 65px;\n        height: 42px;\n        border-radius: 21px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        background-color: #fff;\n        box-shadow: 0 3px 5px $shadow-base-color;\n\n        &.light {\n            box-shadow: 0 3px 5px $shadow-secondary-color;\n        }\n    \n        input {\n            border: none;\n            text-align: center;\n            width: 80%;\n            font-family: $font;\n            font-size: $t2-base-size;\n        }\n    }\n    .da-counter-btn {\n        color: $button-base-color;\n        border: none;\n        width: 30px;\n        height: 30px;\n        border-radius: 15px;\n        background-color: #fff;\n        box-shadow: 0 3px 5px $shadow-base-color;\n        cursor: pointer;\n\n        &.light {\n            box-shadow: 0 3px 5px $shadow-secondary-color;\n        }\n\n        &:hover {\n            background-color: $button-base-color;\n            color: #fff;\n\n            &.light {\n                background-color: $button-secondary-color;\n                color: $button-base-color;\n            }\n        }\n\n        &:active {\n            background-color: $button-base-color;\n            color: #fff;\n\n            &.light {\n                background-color: $button-secondary-color;\n                color: $button-base-color;\n            }\n        }\n    }\n}\n\n\n// * {\n//     outline: 1px solid red;\n// }",
                     "styleUrl": "./counter.component.scss"
                 }
             ],
@@ -890,6 +1026,208 @@
                 }
             ],
             "stylesData": ""
+        },
+        {
+            "name": "InputButtonComponent",
+            "id": "component-InputButtonComponent-2004dc3bc2f2ea5835428018bbb27fa1de5870fdb92b7f81885936e45f8d3d6203a5892a0b8f8ba8c6e94485293f5822cd4bb28708a10689af877561cdb14aa8",
+            "file": "src/app/elements/inputs/input-button/input-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-input-button",
+            "styleUrls": [
+                "./input-button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./input-button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "info",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "infoHeader",
+                    "defaultValue": "'info header'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "infoText",
+                    "defaultValue": "'info text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'label'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "light",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "name",
+                    "defaultValue": "'name'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "short",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "touched",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'nebenkosten'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "unit",
+                    "defaultValue": "'€'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "'value'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "inputValue",
+                    "defaultValue": "new EventEmitter<string>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "EventEmitter<any>"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "faCircleExclamation",
+                    "defaultValue": "faCircleExclamation",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "faCircleInfo",
+                    "defaultValue": "faCircleInfo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "getValue",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { faCircleCheck, faCircleXmark, faCircleExclamation, faCircleInfo } from '@fortawesome/free-solid-svg-icons';\n\n@Component({\n  selector: 'app-input-button',\n  templateUrl: './input-button.component.html',\n  styleUrls: ['./input-button.component.scss']\n})\nexport class InputButtonComponent implements OnInit {\n\n  @Input() label: string = 'label';\n  @Input() name: string = 'name';\n  @Input() type: string = 'nebenkosten';\n  @Input() value: string = 'value';\n  @Input() touched: boolean = false;\n  @Input() short: boolean = false;\n  @Input() unit: string = '€';\n  @Input() info: boolean = false;\n  @Input() infoText: string = 'info text';\n  @Input() infoHeader: string = 'info header';\n  @Input() light: boolean = false;\n\n  faCircleExclamation = faCircleExclamation;\n  faCircleInfo = faCircleInfo;\n\n  @Output() public inputValue:EventEmitter<any> = new EventEmitter<string>();\n  \n  constructor() {}\n\n  ngOnInit(): void {\n  }\n\n  getValue() {\n    this.inputValue.emit(this.type);\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../../../../styles.scss\"; \n\n.da-input-button-single {\n    font-family: $font;\n\n    .da-input-button-label {\n        font-size: $t4-base-size;\n        margin-bottom: 3px;\n        margin-left: 21px;\n        color: $t4-base-color;\n\n        &.light {\n            color: $t4-secondary-color;\n        }\n    }\n\n    .da-input {\n        position: relative;\n        display: flex;\n        align-items: center;\n        \n        .da-input-button-icons {\n            height: 20px;\n            width: 20px;\n            font-size: 24px;\n            position: absolute;\n            left: 10px;\n            top: 10px;\n            border-radius: 25px;\n            box-shadow: 0 3px 5px $shadow-base-color;\n            background: #fff;\n\n            .da-input-button-icon-yellow {\n                color: $attention-color;\n                position: absolute;\n                top: -4px;\n                left: -1px;\n                \n            }\n    \n        }\n\n        button {\n            width: 185px;\n            height: 42px;\n            border-radius: 24px;\n            background-color: $button-secondary-color;\n            border: 0px solid transparent;\n            box-shadow: 0 3px 5px $shadow-base-color;\n            text-align: right;\n            padding: 8px 30px 8px 8px;\n            font-size: $t1-base-size;\n            color: $t1-base-color;\n            font-family: $font;\n            cursor: pointer;\n\n            &:hover,\n            &:focus,\n            &:focus-visible {\n                // border: 2px solid $button-base-color;\n                outline: none;\n            }\n\n            &.light {\n                box-shadow: 0 3px 5px $shadow-secondary-color;\n\n                &:hover,\n                &:focus {\n                    // border: 2px solid $button-secondary-color;\n                    outline: none;\n                }\n            }\n\n            &.short {\n                width: 100px;\n\n            }\n        }\n\n        .da-input-button-unit {\n            position: absolute;\n            color: $t1-base-color;\n            left: 157px;\n            // margin-bottom: 2px;\n            width: 25px;\n            text-align: center;\n\n            &.short {\n                left: 70px;\n            }\n        }\n\n        .da-input-button-info-button {\n            color: $t1-base-color;\n            width: 20px;\n            height: 20px;\n            position: relative;\n            background: #fff;\n            border-radius: 20px;\n            cursor: pointer;\n            transition: all 0.25s ease-in-out;\n            box-shadow: 0 3px 5px $shadow-base-color;\n            margin-left: 10px;\n            text-align: left;\n\n            &.light {\n                color: $t4-secondary-color;\n                background: transparent;\n            }\n\n            .da-input-button-info-icon {\n                font-size: 20px;\n                position: absolute;\n                top: -2px;\n                left: 0px;\n\n                &:hover {\n                    font-size: 22px;\n                }\n            }\n        }\n    }\n}\n\n",
+                    "styleUrl": "./input-button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 26
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"da-input-button-single\">\n    <div class=\"da-input-button-label\" [ngClass]=\"{'light' : light}\">{{label}}</div>\n    <label class=\"da-input\">\n        <div class=\"da-input-button-icons\" *ngIf=\"!touched\">\n            <fa-icon \n                class=\"da-input-button-icon-yellow\" \n                [icon]=\"faCircleExclamation\" \n            ></fa-icon>\n        </div>\n        <button \n            autocomplete=\"off\"\n            [id]=\"name\"\n            (click)=\"getValue()\" \n            [name]=\"name\"\n            [ngClass]=\"[light ? 'light' : '', short ? 'short' : '']\" \n            #target\n        >{{ value }}</button>\n        <div class=\"da-input-button-unit\" [ngClass]=\"{'short' : short}\">{{unit}}</div>\n        <div class=\"da-input-button-info-button\" *ngIf=\"info\" [ngClass]=\"{'light' : light}\">\n            <fa-icon class=\"da-input-button-info-icon\" [icon]=\"faCircleInfo\"></fa-icon>\n        </div>\n    </label>\n</div>\n"
         },
         {
             "name": "InputComponent",
@@ -1131,7 +1469,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../../../../styles.scss\"; \n\n.da-input-single {\n    font-family: $font;\n\n    .da-input-label {\n        font-size: $t4-base-size;\n        margin-bottom: 3px;\n        margin-left: 21px;\n        color: $t4-base-color;\n\n        &.light {\n            color: $t4-secondary-color;\n        }\n    }\n\n    .da-input {\n        position: relative;\n        display: flex;\n        align-items: center;\n        \n        .da-input-icons {\n            height: 24px;\n            width: 24px;\n            font-size: 24px;\n            position: absolute;\n            left: 8px;\n            top: 9px;\n            border-radius: 25px;\n            box-shadow: 0 3px 5px $shadow-base-color;\n            \n            .da-input-icon-green {\n                color: $success-color;\n            }\n    \n            .da-input-icon-red {\n                color: $warning-base-color;\n                \n            }\n    \n        }\n\n        input {\n            width: 150px;\n            height: 26px;\n            border-radius: 24px;\n            background-color: #fff;\n            border: 2px solid transparent;\n            box-shadow: 0 3px 5px $shadow-base-color;\n            text-align: right;\n            padding: 8px 30px 8px 8px;\n            font-size: $t1-base-size;\n            color: $t1-base-color;\n\n            &:hover,\n            &:focus,\n            &:focus-visible {\n                border: 2px solid $button-base-color;\n            }\n\n            &::placeholder {\n                color: $t5-base-color;\n                text-align: right;\n            }\n\n            &.light {\n                box-shadow: 0 3px 5px $shadow-secondary-color;\n\n                &:hover,\n                &:focus {\n                    border: 2px solid $button-secondary-color;\n                }\n            }\n\n            &.error {\n                background-color: $error-background;\n                border: 2px solid $warning-base-color;\n            }\n        }\n\n        .da-input-unit {\n            position: absolute;\n            color: $t1-base-color;\n            left: 163px;\n            margin-bottom: 2px;\n            width: 25px;\n            text-align: center;\n        }\n\n        .da-input-info-button {\n            color: $t1-base-color;\n            font-size: 20px;\n            cursor: pointer;\n            transition: all 0.25s ease-in-out;\n            margin-left: 10px;\n\n            &:hover {\n                font-size: 22px;\n            }\n        }\n    }\n    .da-input-error {\n            background-color: $button-base-color;\n            font-size: $t1-base-size;\n            color: $t1-secondary-color;\n            max-width: 185px;\n            position: relative;\n            border-radius: 5px;\n            padding: 10px;\n            display: flex;\n            z-index: 1;\n            margin-top: 15px;\n            justify-content: center;\n            align-items: center;\n\n            &.light {\n                color: $t1-base-color;\n                background-color: $button-secondary-color;\n            }\n\n        .da-tooltip-arrow {\n            width: 20px;\n            height: 20px;\n            position: absolute;\n            top: -20px;\n            left: 20px;\n\n            .da-arrow-up {\n                width: 0; \n                height: 0; \n                border-left: 20px solid transparent;\n                border-right: 20px solid transparent;\n                border-bottom: 20px solid $button-base-color;\n\n                &.light {\n                    border-bottom: 20px solid $button-secondary-color;\n                }\n              }\n        }\n\n        .da-input-error-icon {\n            margin-right: 20px;\n        }\n\n        span {\n            word-break: break-all;\n        }\n    }\n}\n\n",
+                    "data": "@import \"../../../../styles.scss\"; \n\n.da-input-single {\n    font-family: $font;\n\n    .da-input-label {\n        font-size: $t4-base-size;\n        margin-bottom: 3px;\n        margin-left: 21px;\n        color: $t4-base-color;\n\n        &.light {\n            color: $t4-secondary-color;\n        }\n    }\n\n    .da-input {\n        position: relative;\n        display: flex;\n        align-items: center;\n        \n        .da-input-icons {\n            height: 20px;\n            width: 20px;\n            font-size: 24px;\n            position: absolute;\n            left: 10px;\n            top: 10px;\n            border-radius: 25px;\n            box-shadow: 0 3px 5px $shadow-base-color;\n            background: #fff;\n\n            &.error {\n                top: 12px;\n            }\n            \n            .da-input-icon-green {\n                color: $success-color;\n                position: absolute;\n                top: -4px;\n                left: -1px;\n            }\n    \n            .da-input-icon-red {\n                color: $warning-base-color;\n                position: absolute;\n                top: -4px;\n                left: -1px;\n                \n            }\n    \n        }\n\n        input {\n            width: 150px;\n            height: 26px;\n            border-radius: 24px;\n            background-color: #fff;\n            border: 0px solid transparent;\n            box-shadow: 0 3px 5px $shadow-base-color;\n            text-align: right;\n            padding: 8px 30px 8px 8px;\n            font-size: $t1-base-size;\n            color: $t1-base-color;\n            font-family: $font;\n\n            &:hover,\n            &:focus,\n            &:focus-visible {\n                // border: 2px solid $button-base-color;\n                outline: none;\n            }\n\n            &::placeholder {\n                color: $t5-base-color;\n                text-align: right;\n            }\n\n            &.light {\n                box-shadow: 0 3px 5px $shadow-secondary-color;\n\n                &:hover,\n                &:focus {\n                    // border: 2px solid $button-secondary-color;\n                    outline: none;\n                }\n            }\n\n            &.error {\n                background-color: $error-background;\n                border: 2px solid $warning-base-color;\n                color: $warning-base-color;\n\n                &::placeholder {\n                    color: $warning-base-color;\n                }\n            }\n        }\n\n        .da-input-unit {\n            position: absolute;\n            color: $t1-base-color;\n            left: 157px;\n            // margin-bottom: 2px;\n            width: 25px;\n            text-align: center;\n        }\n\n        .da-input-info-button {\n            color: $t1-base-color;\n            width: 20px;\n            height: 20px;\n            position: relative;\n            background: #fff;\n            border-radius: 20px;\n            cursor: pointer;\n            transition: all 0.25s ease-in-out;\n            box-shadow: 0 3px 5px $shadow-base-color;\n            margin-left: 10px;\n            text-align: left;\n\n            &.light {\n                color: $t4-secondary-color;\n                background: transparent;\n            }\n\n            .da-input-info-icon {\n                font-size: 20px;\n                position: absolute;\n                top: -2px;\n                left: 0px;\n\n                &:hover {\n                    font-size: 22px;\n                }\n            }\n        }\n    }\n    .da-input-error {\n            background-color: $button-base-color;\n            font-size: $t1-base-size;\n            color: $t1-secondary-color;\n            max-width: 185px;\n            position: relative;\n            border-radius: 10px;\n            padding: 10px;\n            display: flex;\n            z-index: 1;\n            margin-top: 15px;\n            justify-content: center;\n            align-items: center;\n\n            &.light {\n                color: $t1-base-color;\n                background-color: $button-secondary-color;\n            }\n\n        .da-tooltip-arrow {\n            width: 20px;\n            height: 20px;\n            position: absolute;\n            top: -20px;\n            left: 20px;\n\n            .da-arrow-up {\n                width: 0; \n                height: 0; \n                border-left: 20px solid transparent;\n                border-right: 20px solid transparent;\n                border-bottom: 20px solid $button-base-color;\n\n                &.light {\n                    border-bottom: 20px solid $button-secondary-color;\n                }\n              }\n        }\n\n        .da-input-error-icon-wrapper {\n            background: transparent;\n            border-radius: 20px;\n            position: relative;\n            margin-right: 20px;\n            box-shadow: 0 3px 5px $shadow-base-color;\n            width: 20px;\n            height: 20px;\n\n            .da-input-error-icon {\n                position: absolute;\n                top: -3px;\n                font-size: 20px;\n            }\n\n            &.light {\n                background: #fff;\n            }\n        }\n\n        span {\n            word-break: break-all;\n        }\n    }\n}\n\n",
                     "styleUrl": "./input.component.scss"
                 }
             ],
@@ -1147,7 +1485,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"da-input-single\">\n    <div class=\"da-input-label\" [ngClass]=\"{'light' : light}\">{{label}}</div>\n    <label class=\"da-input\">\n        <div class=\"da-input-icons\" *ngIf=\"touched\">\n            <fa-icon \n                *ngIf=\"!error\" \n                class=\"da-input-icon-green\" \n                [icon]=\"faCircleCheck\"\n            ></fa-icon>\n            <fa-icon \n                *ngIf=\"error\" \n                class=\"da-input-icon-red\" \n                [icon]=\"faCircleXmark\" \n            ></fa-icon>\n        </div>\n        <input \n            autocomplete=\"off\"\n            [type]=\"type\" \n            [id]=\"name\"\n            (keyup)=\"getValue($event)\" \n            [placeholder]=\"placeholder\"\n            [name]=\"name\"\n            [value]=\"value\"\n            [ngClass]=\"[light ? 'light' : '',  error ? 'error' : '']\" \n            #target\n        >\n        <div class=\"da-input-unit\">{{unit}}</div>\n        <div class=\"da-input-info-button\" *ngIf=\"info\">\n            <fa-icon class=\"da-input-info-icon\" [icon]=\"faCircleInfo\"></fa-icon>\n        </div>\n    </label>\n    <div class=\"da-input-error\" *ngIf=\"error\" [ngClass]=\"{'light' : light}\">\n        <div class=\"da-tooltip-arrow\">\n            <div class=\"da-arrow-up\" [ngClass]=\"{'light' : light}\"></div>\n        </div>\n        <fa-icon class=\"da-input-error-icon\" [icon]=\"faCircleExclamation\"></fa-icon>\n        <span>{{errorText}}</span>\n    </div>\n</div>\n"
+            "templateData": "<div class=\"da-input-single\">\n    <div class=\"da-input-label\" [ngClass]=\"{'light' : light}\">{{label}}</div>\n    <label class=\"da-input\">\n        <div class=\"da-input-icons\" *ngIf=\"touched\" [ngClass]=\"{'error' : error}\">\n            <fa-icon \n                *ngIf=\"!error\" \n                class=\"da-input-icon-green\" \n                [icon]=\"faCircleCheck\"\n            ></fa-icon>\n            <fa-icon \n                *ngIf=\"error\" \n                class=\"da-input-icon-red\" \n                [icon]=\"faCircleXmark\" \n            ></fa-icon>\n        </div>\n        <input \n            autocomplete=\"off\"\n            [type]=\"type\" \n            [id]=\"name\"\n            (keyup)=\"getValue($event)\" \n            [placeholder]=\"placeholder\"\n            [name]=\"name\"\n            [value]=\"value\"\n            [ngClass]=\"[light ? 'light' : '',  error ? 'error' : '']\" \n            #target\n        >\n        <div class=\"da-input-unit\">{{unit}}</div>\n        <div class=\"da-input-info-button\" *ngIf=\"info\" [ngClass]=\"{'light' : light}\">\n            <fa-icon class=\"da-input-info-icon\" [icon]=\"faCircleInfo\"></fa-icon>\n        </div>\n    </label>\n    <div class=\"da-input-error\" *ngIf=\"error\" [ngClass]=\"{'light' : light}\">\n        <div class=\"da-tooltip-arrow\">\n            <div class=\"da-arrow-up\" [ngClass]=\"{'light' : light}\"></div>\n        </div>\n        <div class=\"da-input-error-icon-wrapper\" [ngClass]=\"{'light' : light}\">\n            <fa-icon class=\"da-input-error-icon\" [icon]=\"faCircleExclamation\"></fa-icon>\n        </div>\n        <span>{{errorText}}</span>\n    </div>\n</div>\n"
         },
         {
             "name": "PageComponent",
@@ -1224,7 +1562,7 @@
         },
         {
             "name": "TileComponent",
-            "id": "component-TileComponent-25a3bd50c85affab92a568c1387057fefaedbf5444ab2c7a6fb9fefc3c292a1146e81303726a4e088d7a01e412807c44e89a585f3a804867c5ceac0bc22ad1fb",
+            "id": "component-TileComponent-8d8347ec7ea0bb0b9f8a516c6d6ae115c2187c0480d6aa267034dfbe912f0f425b28ee02ddac6f344cff32028940752a7731748146edf4cacce9e3c6178be050",
             "file": "src/app/elements/tiles/tile/tile.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1395,7 +1733,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 41,
+                    "line": 38,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -1423,7 +1761,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 33,
+                    "line": 32,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -1456,11 +1794,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, TemplateRef } from '@angular/core';\nimport { DomSanitizer} from '@angular/platform-browser';\nimport { faCircleCheck, faCircleExclamation, faCircleXmark } from '@fortawesome/free-solid-svg-icons';\n\n@Component({\n  selector: 'app-tile',\n  templateUrl: './tile.component.html',\n  styleUrls: ['./tile.component.scss']\n})\nexport class TileComponent implements OnInit, OnChanges {\n  @Input() label: string = 'label';\n  @Input() name: string = 'name';\n  @Input() checked: boolean = false;\n  @Input() value: string = 'value';\n  @Input() localValue: string = 'localValue';\n  @Input() state: string = 'state';\n  @Input() image: any;\n  @Input() light: boolean = true;\n  @Input() content!: TemplateRef<any>;\n  expanded!: boolean;\n  localImage: any;\n  faCheck = faCircleCheck;\n  faAttention = faCircleExclamation;\n  faError = faCircleXmark;\n  @Output() public checkboxValue:EventEmitter<any> = new EventEmitter<boolean>();\n\n  constructor(private sanitizer: DomSanitizer) { this.localImage = this.sanitizer.bypassSecurityTrustHtml(this.image) }\n\n  ngOnInit(): void {\n    console.log('tile', this.content)\n  }\n\n  ngOnChanges(changes: SimpleChanges) {\n    console.log(changes)\n    if(changes && changes['localValue']) {\n      this.expanded = this.localValue !== this.value ? false : true;\n      console.log(this.expanded)\n    }\n  }\n\n  getValue(e: any) {\n    console.log('tile', e.srcElement.value, e.srcElement.checked);\n    this.checkboxValue.emit(e.srcElement.value);\n  }\n\n}",
+            "sourceCode": "import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, TemplateRef } from '@angular/core';\nimport { DomSanitizer} from '@angular/platform-browser';\nimport { faCircleCheck, faCircleExclamation, faCircleXmark } from '@fortawesome/free-solid-svg-icons';\n\n@Component({\n  selector: 'app-tile',\n  templateUrl: './tile.component.html',\n  styleUrls: ['./tile.component.scss']\n})\nexport class TileComponent implements OnInit, OnChanges {\n  @Input() label: string = 'label';\n  @Input() name: string = 'name';\n  @Input() checked: boolean = false;\n  @Input() value: string = 'value';\n  @Input() localValue: string = 'localValue';\n  @Input() state: string = 'state';\n  @Input() image: any;\n  @Input() light: boolean = true;\n  @Input() content!: TemplateRef<any>;\n  expanded!: boolean;\n  localImage: any;\n  faCheck = faCircleCheck;\n  faAttention = faCircleExclamation;\n  faError = faCircleXmark;\n  @Output() public checkboxValue:EventEmitter<any> = new EventEmitter<boolean>();\n\n  constructor(private sanitizer: DomSanitizer) { this.localImage = this.sanitizer.bypassSecurityTrustHtml(this.image) }\n\n  ngOnInit(): void {\n  }\n\n  ngOnChanges(changes: SimpleChanges) {\n    if(changes && changes['localValue']) {\n      this.expanded = this.localValue !== this.value ? false : true;\n    }\n  }\n\n  getValue(e: any) {\n    console.log('tile', e.srcElement.value, e.srcElement.checked);\n    this.checkboxValue.emit(e.srcElement.value);\n  }\n\n}",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../../../../styles.scss\"; \n\n.da-tile-single {\n    font-family: $font;\n\n    .da-tile {\n        position: relative;\n        display: inline-block;\n        border-radius: 25px;\n        border: 1px solid transparent;\n        width: 242px;\n        min-height: 222px;\n        background-color: $radiobutton-base-color;\n        box-shadow: 0 3px 5px $shadow-base-color;\n        transition: all 0.25s ease-in-out;\n        padding-bottom: 14px;\n        cursor: pointer;\n\n        &:hover {\n            border: 1px solid $button-base-color;\n        }\n\n        &.expanded {\n            background-color: $button-base-color;\n            border: 1px solid $button-base-color;\n        }\n     \n        .da-tile-icon {\n\n            margin-left: 15px;\n            top: 15px;\n            position: absolute;\n            z-index: 1;\n            font-size: 1.5rem;\n            display: none;\n\n            &.green {\n                color: $success-color;\n            }\n\n            &.yellow {\n                color: $attention-color;\n            }\n\n            &.red {\n                color: $warning-base-color;\n            }\n        }\n\n        .da-tile-image {\n            width: 244px;\n            height: 90px;\n            color: $t4-base-color;\n            display: flex;\n            position: relative;\n            z-index: 1;\n            margin-bottom: 5px;\n            justify-content: center;\n            pointer-events: none;\n            font-size: 90px;\n        }\n    \n        input {\n            opacity: 0;\n            width: 0;\n            height: 0;\n    \n            &:checked ~ .da-tile-icon {\n                display: block;\n            }\n\n            &:checked ~ .da-tile-image {\n                color: $t4-secondary-color;\n            }\n    \n            &:checked ~ .da-tile-label {\n                color: $t4-secondary-color;\n            }\n        }\n\n        .da-tile-label {\n            font-size: 20px;\n            color: $t4-base-color;\n            height: 100px;\n            display: flex;\n            z-index: 1;\n            position: relative;\n            align-items: center;\n            text-align: center;\n            justify-content: center;\n            width: 214px;\n            margin: 0 15px 15px;\n            overflow: hidden;\n            pointer-events: none;\n\n        }\n    }\n\n    .da-tile-expanded {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n        transition: all 0.25s ease-in-out;\n    }\n}\n\n",
+                    "data": "@import \"../../../../styles.scss\"; \n\n.da-tile-single {\n    font-family: $font;\n\n    .da-tile {\n        position: relative;\n        display: inline-block;\n        border-radius: 25px;\n        border: 1px solid transparent;\n        width: 242px;\n        min-height: 222px;\n        background-color: $radiobutton-base-color;\n        box-shadow: 0 3px 5px $shadow-base-color;\n        transition: all 0.25s ease-in-out;\n        padding-bottom: 14px;\n        cursor: pointer;\n\n        &:hover {\n            border: 1px solid $button-base-color;\n        }\n\n        &.expanded {\n            background-color: $button-base-color;\n            border: 1px solid $button-base-color;\n        }\n     \n        .da-tile-icon-wrapper {\n                margin-left: 15px;\n                top: 15px;\n                position: absolute;\n                z-index: 1;\n                font-size: 1.5rem;\n                background: #fff;\n                border-radius: 20px;\n                box-shadow: 0 3px 5px #000;\n                width: 20px;\n                height: 20px;\n                display: none;\n            .da-tile-icon {\n                position: absolute;\n                top: -4px;\n                left: -1px;\n\n                &.green {\n                    color: $success-color;\n                }\n\n                &.yellow {\n                    color: $attention-color;\n                }\n\n                &.red {\n                    color: $warning-base-color;\n                }\n            }\n        }\n        .da-tile-image {\n            width: 244px;\n            height: 90px;\n            color: $t4-base-color;\n            display: flex;\n            position: relative;\n            z-index: 1;\n            margin-bottom: 5px;\n            justify-content: center;\n            pointer-events: none;\n            font-size: 90px;\n        }\n    \n        input {\n            opacity: 0;\n            width: 0;\n            height: 0;\n    \n            &:checked ~ .da-tile-icon-wrapper {\n                display: block;\n            }\n\n            &:checked ~ .da-tile-image {\n                color: $t4-secondary-color;\n            }\n    \n            &:checked ~ .da-tile-label {\n                color: $t4-secondary-color;\n            }\n        }\n\n        .da-tile-label {\n            font-size: 20px;\n            color: $t4-base-color;\n            height: 100px;\n            display: flex;\n            z-index: 1;\n            position: relative;\n            align-items: center;\n            text-align: center;\n            justify-content: center;\n            width: 214px;\n            margin: 0 15px 15px;\n            overflow: hidden;\n            pointer-events: none;\n\n        }\n    }\n\n    .da-tile-expanded {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n        transition: all 0.25s ease-in-out;\n    }\n}\n\n",
                     "styleUrl": "./tile.component.scss"
                 }
             ],
@@ -1495,7 +1833,7 @@
                 "OnInit",
                 "OnChanges"
             ],
-            "templateData": "<div class=\"da-tile-single\">\n    <label class=\"da-tile\" [ngClass]=\"{'expanded' : expanded}\">\n        <input \n            type=\"radio\" \n            (change)=\"getValue($event)\" \n            [checked]=\"checked\"\n            [name]=\"name\"\n            [value]=\"value\"\n        >\n        <fa-icon class=\"da-tile-icon green\" *ngIf=\"state === 'success'\" [icon]=\"faCheck\"></fa-icon>\n        <fa-icon class=\"da-tile-icon yellow\" *ngIf=\"state === 'warning'\" [icon]=\"faAttention\"></fa-icon>\n        <fa-icon class=\"da-tile-icon red\" *ngIf=\"state === 'error'\" [icon]=\"faError\"></fa-icon>\n        <fa-icon class=\"da-tile-image\" [icon]=\"image\"></fa-icon>\n        <div class=\"da-tile-label\">{{label}}</div>\n        <div *ngIf=\"expanded\" class=\"da-tile-expanded\" [ngClass]=\"{'light' : light}\">\n            <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n        </div>\n    </label>\n</div>"
+            "templateData": "<div class=\"da-tile-single\">\n    <label class=\"da-tile\" [ngClass]=\"{'expanded' : expanded}\">\n        <input \n            type=\"radio\" \n            (change)=\"getValue($event)\" \n            [checked]=\"checked\"\n            [name]=\"name\"\n            [value]=\"value\"\n        >\n        <div class=\"da-tile-icon-wrapper\">\n            <fa-icon class=\"da-tile-icon green\" *ngIf=\"state === 'success'\" [icon]=\"faCheck\"></fa-icon>\n            <fa-icon class=\"da-tile-icon yellow\" *ngIf=\"state === 'warning'\" [icon]=\"faAttention\"></fa-icon>\n            <fa-icon class=\"da-tile-icon red\" *ngIf=\"state === 'error'\" [icon]=\"faError\"></fa-icon>\n        </div>\n        <fa-icon class=\"da-tile-image\" [icon]=\"image\"></fa-icon>\n        <div class=\"da-tile-label\">{{label}}</div>\n        <div *ngIf=\"expanded\" class=\"da-tile-expanded\" [ngClass]=\"{'light' : light}\">\n            <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n        </div>\n    </label>\n</div>"
         },
         {
             "name": "TileGroupComponent",
@@ -1708,7 +2046,7 @@
         },
         {
             "name": "ToggleCheckboxComponent",
-            "id": "component-ToggleCheckboxComponent-30582b30f1af3a84e61f3cbedc38bb8e24f915e1aa26b607339b14759c02c2c033095b18ab272c6f4bce476d3c0864ff71269a3c47122c40f2cda9ea82e87492",
+            "id": "component-ToggleCheckboxComponent-622a934dd971bc94fd9282370fa4826fe4399a64c301198012331fc656526cb57e15d65a389cfc8e7a6f4da320ada587b0da1e2330874f3db3e9e07807aa4679",
             "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1730,7 +2068,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 11,
+                    "line": 12,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -1739,7 +2077,7 @@
                     "defaultValue": "'label'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 9,
+                    "line": 10,
                     "type": "string",
                     "decorators": []
                 },
@@ -1748,7 +2086,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "line": 13,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -1757,7 +2095,7 @@
                     "defaultValue": "'name'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 10,
+                    "line": 11,
                     "type": "string",
                     "decorators": []
                 }
@@ -1768,11 +2106,22 @@
                     "defaultValue": "new EventEmitter<boolean>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "line": 14,
                     "type": "EventEmitter<any>"
                 }
             ],
-            "propertiesClass": [],
+            "propertiesClass": [
+                {
+                    "name": "faCircleXmark",
+                    "defaultValue": "faCircleXmark",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
             "methodsClass": [
                 {
                     "name": "getValue",
@@ -1787,7 +2136,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 20,
+                    "line": 23,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -1808,7 +2157,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 17,
+                    "line": 20,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1820,11 +2169,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\n@Component({\n  selector: 'app-toggle-checkbox',\n  templateUrl: './toggle-checkbox.component.html',\n  styleUrls: ['./toggle-checkbox.component.scss']\n})\nexport class ToggleCheckboxComponent implements OnInit {\n  @Input() label: string = 'label';\n  @Input() name: string = 'name'; \n  @Input() checked: boolean = false;\n  @Input() light: boolean = false;\n  @Output() public checkboxValue:EventEmitter<any> = new EventEmitter<boolean>();\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  getValue(e: any) {\n    console.log(e.srcElement.checked)\n    this.checkboxValue.emit(e.srcElement.checked);\n  }\n\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { faCircleXmark } from '@fortawesome/free-solid-svg-icons';\n\n@Component({\n  selector: 'app-toggle-checkbox',\n  templateUrl: './toggle-checkbox.component.html',\n  styleUrls: ['./toggle-checkbox.component.scss']\n})\nexport class ToggleCheckboxComponent implements OnInit {\n  @Input() label: string = 'label';\n  @Input() name: string = 'name'; \n  @Input() checked: boolean = false;\n  @Input() light: boolean = false;\n  @Output() public checkboxValue:EventEmitter<any> = new EventEmitter<boolean>();\n\n  faCircleXmark = faCircleXmark;\n  \n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  getValue(e: any) {\n    console.log(e.srcElement.checked)\n    this.checkboxValue.emit(e.srcElement.checked);\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../../../../styles.scss\";\n\n.da-toggle-checkbox {\n    font-family: $font;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n\n    .da-switch {\n        position: relative;\n        display: inline-block;\n        background-color: #fff;\n        box-shadow: 0 3px 5px $shadow-base-color;\n        border-radius: 25px;\n        width: 50px;\n        height: 25px;\n\n        &.light {\n            box-shadow: 0 3px 5px $shadow-secondary-color;\n        }\n    \n        input {\n            opacity: 0;\n            width: 0;\n            height: 0;\n    \n            &:checked + .da-switch-slider:before {\n                content: '';\n                background-color: $success-color;\n                width: 34px;\n            }\n    \n            &:checked + .da-switch-slider:before {\n                -webkit-transform: translateX(-25px);\n                -ms-transform: translateX(-25px);\n                transform: translateX(-25px);\n            }\n        }\n    \n        .da-switch-slider {\n            position: absolute;\n            cursor: pointer;\n            top: 0;\n            left: 0;\n            right: 0;\n            bottom: 0;\n            border-radius: 25px;\n            -webkit-transition: 0.4s;\n            transition: 0.4s;\n        }\n    \n        .da-switch-slider:before {\n            position: absolute;\n            content: \"x\";\n            color: #fff;\n            left: 25px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: 25px;\n            width: 25px;\n            border-radius: 25px;\n            background-color: #ccc;\n            -webkit-transition: 0.4s;\n            transition: 0.4s;\n        }\n    }\n    .da-switch-label {\n        font-size: 14px;\n        color: $t4-base-color;\n        position: relative;\n        white-space: nowrap;\n        left: 10px;\n\n        &.light {\n            color: $t4-secondary-color;\n        }\n    }\n\n}\n\n",
+                    "data": "@import \"../../../../styles.scss\";\n\n.da-toggle-checkbox {\n    font-family: $font;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n\n    .da-switch {\n        position: relative;\n        display: inline-block;\n        background-color: #fff;\n        box-shadow: 0 3px 5px $shadow-base-color;\n        border-radius: 25px;\n        width: 50px;\n        height: 25px;\n\n        &.light {\n            box-shadow: 0 3px 5px $shadow-secondary-color;\n        }\n    \n        input {\n            opacity: 0;\n            width: 0;\n            height: 0;\n    \n            &:checked + .da-switch-slider:before {\n                content: '';\n                background-color: $success-color;\n                width: 34px;\n            }\n    \n            &:checked + .da-switch-slider:before {\n                -webkit-transform: translateX(-25px);\n                -ms-transform: translateX(-25px);\n                transform: translateX(-25px);\n            }\n        }\n    \n        .da-switch-slider {\n            position: absolute;\n            cursor: pointer;\n            top: 0;\n            left: 0;\n            right: 0;\n            bottom: 0;\n            border-radius: 25px;\n            -webkit-transition: 0.4s;\n            transition: 0.4s;\n        }\n    \n        .da-switch-slider:before {\n            position: absolute;\n            content: '\\f00d';\n            font: var(--fa-font-solid);\n            color: #fff;\n            left: 25px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: 25px;\n            width: 25px;\n            border-radius: 25px;\n            background-color: #ccc;\n            -webkit-transition: 0.4s;\n            transition: 0.4s;\n        }\n    }\n    .da-switch-label {\n        font-size: 14px;\n        color: $t4-base-color;\n        position: relative;\n        white-space: nowrap;\n        left: 10px;\n\n        &.light {\n            color: $t4-secondary-color;\n        }\n    }\n\n}\n\n",
                     "styleUrl": "./toggle-checkbox.component.scss"
                 }
             ],
@@ -1835,12 +2184,12 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 13
+                "line": 16
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"da-toggle-checkbox\">\n    <label class=\"da-switch\" [ngClass]=\"{'light' : light}\">\n        <input \n            type=\"checkbox\" \n            (change)=\"getValue($event)\" \n            [checked]=\"checked\"\n            [name]=\"name\"\n        >\n        <span class=\"da-switch-slider\"></span>\n    </label>\n    <span class=\"da-switch-label\" [ngClass]=\"{'light' : light}\">{{label}}</span>\n</div>\n\n"
+            "templateData": "<div class=\"da-toggle-checkbox\">\n    <label class=\"da-switch\" [ngClass]=\"{'light' : light}\">\n        <input \n            type=\"checkbox\" \n            (change)=\"getValue($event)\" \n            [checked]=\"checked\"\n            [name]=\"name\"\n        >\n        <span class=\"da-switch-slider\">\n            <fa-icon \n                *ngIf=\"!checked\" \n                class=\"da-check-icon\" \n                [icon]=\"faCircleXmark\" \n            ></fa-icon>\n        </span>\n    </label>\n    <span class=\"da-switch-label\" [ngClass]=\"{'light' : light}\">{{label}}</span>\n</div>\n\n"
         },
         {
             "name": "ToggleComponent",
@@ -1989,7 +2338,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../../../../styles.scss\";  \n\n.da-toggle {\n    font-family: $font;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 185px;\n    height: 42px;\n    border-radius: 21px;\n    background-color: #fff;\n    box-shadow: 0 3px 5px $shadow-base-color;\n\n    &.light {\n        box-shadow: 0 3px 5px $shadow-secondary-color;\n    }\n\n    .da-switch {\n        position: relative;\n        cursor: pointer;\n        top: 0;\n        left: 0;\n        right: 0;\n        bottom: 0;\n        border-radius: 21px;\n        width: 92px;\n        height: 42px;\n        -webkit-transition: 0.4s;\n        transition: 0.4s;\n\n\n        input {\n            opacity: 0;\n            width: 0;\n            height: 0;\n\n            &:checked + .da-switch-slider {\n                background-color: $success-color;\n                color: #fff;\n                box-shadow: 0 3px 5px $shadow-base-color;\n                z-index: 2;\n            }\n\n            &:checked + .da-switch-slider.light {\n                background-color: $success-color;\n                color: #fff;\n                box-shadow: 0 3px 5px $shadow-secondary-color;\n                z-index: 2;\n            }\n\n        }\n\n        .da-switch-label {\n            position: relative;\n            white-space: nowrap;\n            pointer-events: none;\n            left: 10px;\n            z-index: 1;\n        }\n        .da-switch-icon {\n            font-size: 1.5rem;\n            z-index: 1;\n            color: #fff;\n            margin-right: 1px;\n            pointer-events: none;\n        }\n\n        .da-switch-slider {\n            position: absolute;\n            cursor: pointer;\n            top: 0;\n            bottom: 0;\n            height: 42px;\n            width: 100%;\n            color: $t1-base-color;\n            border-radius: 21px;\n            z-index: 1;\n            display: flex;\n            align-items: center;\n            justify-content: space-around;\n            -webkit-transition: 0.4s;\n            transition: 0.4s;\n\n            &.right {\n                right: -1px;\n                left: 0px;\n            }\n\n            &.left {\n                left: -1px;\n                right: 0px,\n            }\n\n            &:before {\n                position: absolute;\n                content: \"\";\n                height: 42px;\n                width: 100%;\n                border-radius: 21px;\n                -webkit-transition: 0.4s;\n                transition: 0.4s;\n            }\n\n            &.left:hover {\n                background-color: #ccc;\n                box-shadow: 0 3px 5px $shadow-base-color;\n                color: #fff;\n                width: 100px;\n\n            }\n\n            &.right:hover {\n                background-color: #ccc;\n                box-shadow: 0 3px 5px $shadow-base-color;\n                width: 100px;\n                color: #fff;\n                left: -8px;\n            }\n        }\n\n\n    }\n}\n\n",
+                    "data": "@import \"../../../../styles.scss\";  \n\n.da-toggle {\n    font-family: $font;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 200px;\n    height: 42px;\n    border-radius: 21px;\n    background-color: #fff;\n    box-shadow: 0 3px 5px $shadow-base-color;\n\n    &.light {\n        box-shadow: 0 3px 5px $shadow-secondary-color;\n    }\n\n    .da-switch {\n        position: relative;\n        cursor: pointer;\n        top: 0;\n        left: 0;\n        right: 0;\n        bottom: 0;\n        border-radius: 21px;\n        width: 92px;\n        height: 42px;\n        -webkit-transition: 0.4s;\n        transition: 0.4s;\n\n\n        input {\n            opacity: 0;\n            width: 0;\n            height: 0;\n\n            &:checked + .da-switch-slider {\n                background-color: $success-color;\n                color: #fff;\n                box-shadow: 0 3px 5px $shadow-base-color;\n                z-index: 2;\n            }\n\n            &:checked + .da-switch-slider.light {\n                background-color: $success-color;\n                color: #fff;\n                box-shadow: 0 3px 5px $shadow-secondary-color;\n                z-index: 2;\n            }\n\n        }\n\n        .da-switch-label {\n            position: relative;\n            white-space: nowrap;\n            pointer-events: none;\n            left: 10px;\n            z-index: 1;\n        }\n        .da-switch-icon {\n            font-size: 1.5rem;\n            z-index: 1;\n            color: #fff;\n            margin-right: 1px;\n            pointer-events: none;\n        }\n\n        .da-switch-slider {\n            position: absolute;\n            cursor: pointer;\n            top: 0;\n            bottom: 0;\n            height: 42px;\n            width: 100%;\n            color: $t1-base-color;\n            border-radius: 21px;\n            z-index: 1;\n            display: flex;\n            align-items: center;\n            justify-content: space-around;\n            -webkit-transition: 0.4s;\n            transition: 0.4s;\n\n            &.right {\n                right: -1px;\n                left: 0px;\n                width: 100px;\n            }\n\n            &.left {\n                left: -8px;\n                right: 0px;\n                width: 100px;\n            }\n\n            &:before {\n                position: absolute;\n                content: \"\";\n                height: 42px;\n                width: 100%;\n                border-radius: 21px;\n                -webkit-transition: 0.4s;\n                transition: 0.4s;\n            }\n\n            &.left:hover {\n                background-color: #ccc;\n                box-shadow: 0 3px 5px $shadow-base-color;\n                color: #fff;\n\n\n            }\n\n            &.right:hover {\n                background-color: #ccc;\n                box-shadow: 0 3px 5px $shadow-base-color;\n                color: #fff;\n            }\n        }\n\n\n    }\n}\n\n",
                     "styleUrl": "./toggle.component.scss"
                 }
             ],
@@ -2011,13 +2360,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-0045286e0c00e83dbff793f91b06ae8aa183dd193f698d8156c96214b1e70b32002bb328fc4df981eadca6479ecac5e3b307e5c10590625e2985a8fee631d8a8",
+            "id": "module-AppModule-8cc60c64205a622f311f5a7f1e179942f295a4ce8530619e4b135914fb1c1c4e558b0342ad1c401368ad10700c87bd1c4531acb51f2e4d3a3ff055a6cd45fc0a",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\nimport { AngularSvgIconModule } from 'angular-svg-icon';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\nimport { CounterComponent } from './elements/counter/counter.component';\nimport { InputComponent } from './elements/inputs/input/input.component';\nimport { TileComponent } from './elements/tiles/tile/tile.component';\nimport { TileGroupComponent } from './elements/tiles/tile-group/tile-group.component';\nimport { ToggleComponent } from './elements/toggle/toggle/toggle.component';\nimport { ToggleCheckboxComponent } from './elements/toggle/toggle-checkbox/toggle-checkbox.component';\nimport { NgbModule } from '@ng-bootstrap/ng-bootstrap';\nimport { TileTextComponent } from './elements/text/tile-text/tile-text.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    CounterComponent,\n    InputComponent,\n    TileComponent,\n    TileGroupComponent,\n    ToggleComponent,\n    ToggleCheckboxComponent,\n    TileTextComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule,\n    BrowserAnimationsModule,\n    AngularSvgIconModule.forRoot(),\n    NgbModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\nimport { AngularSvgIconModule } from 'angular-svg-icon';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\nimport { CounterComponent } from './elements/counter/counter.component';\nimport { InputComponent } from './elements/inputs/input/input.component';\nimport { TileComponent } from './elements/tiles/tile/tile.component';\nimport { TileGroupComponent } from './elements/tiles/tile-group/tile-group.component';\nimport { ToggleComponent } from './elements/toggle/toggle/toggle.component';\nimport { ToggleCheckboxComponent } from './elements/toggle/toggle-checkbox/toggle-checkbox.component';\nimport { NgbModule } from '@ng-bootstrap/ng-bootstrap';\nimport { TileTextComponent } from './elements/text/tile-text/tile-text.component';\nimport { InputButtonComponent } from './elements/inputs/input-button/input-button.component';\nimport { ButtonComponent } from './elements/buttons/button/button.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    CounterComponent,\n    InputComponent,\n    TileComponent,\n    TileGroupComponent,\n    ToggleComponent,\n    ToggleCheckboxComponent,\n    TileTextComponent,\n    InputButtonComponent,\n    ButtonComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule,\n    BrowserAnimationsModule,\n    AngularSvgIconModule.forRoot(),\n    NgbModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -2031,6 +2380,9 @@
                         },
                         {
                             "name": "CounterComponent"
+                        },
+                        {
+                            "name": "InputButtonComponent"
                         },
                         {
                             "name": "InputComponent"
@@ -2241,14 +2593,54 @@
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
             {
+                "name": "Dark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/counter/counter.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    placeholder: '0',\n    value: 0,\n    step: 1,\n    min: 0,\n    max: 10,\n    name: 'name',\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "Dark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'der Text',\n    light: true,\n    large: false,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "Dark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/toggle/toggle/toggle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label1: 'Ja',\n    label2: 'Nein',\n    value1: 'true',\n    value2: 'false',\n    name: 'name',\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "Dark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    checked: true,\n    light: true\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/elements/counter/counter.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    placeholder: '0',\n    value: 0,\n    step: 1,\n    min: 0,\n    max: 10,\n    name: 'name',\n    light: false,\n  },\n}"
             },
             {
                 "name": "Default",
@@ -2257,24 +2649,34 @@
                 "file": "src/app/elements/inputs/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: false,\n    error: false,\n    light: false,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/elements/tiles/tile/tile.stories.ts",
+                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: true,\n    light: false,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'der Text',\n    light: false,\n    large: false,\n  },\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/tiles/tile/tile.storiesOff.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2297,8 +2699,8 @@
                 "file": "src/app/elements/toggle/toggle/toggle.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label1: 'Ja',\n    label2: 'Nein',\n    value1: 'true',\n    value2: 'false',\n    name: 'name',\n    light: false,\n  },\n}"
             },
             {
                 "name": "Default",
@@ -2307,8 +2709,48 @@
                 "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    checked: true,\n    light: false\n  },\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    value: 'button label',\n    light: false,\n  },\n}"
+            },
+            {
+                "name": "DefaultDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: false,\n    error: false,\n    light: true,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "DefaultDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: true,\n    light: true,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "DefaultDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    value: 'button label',\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
             },
             {
                 "name": "environment",
@@ -2329,6 +2771,86 @@
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "error",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: 'falscher input',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: true,\n    error: true,\n    light: false,\n    faCircleExclamation: faCircleExclamation,\n    faCircleXmark: faCircleXmark,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+            },
+            {
+                "name": "errorDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: 'falscher input',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: true,\n    error: true,\n    light: true,\n    faCircleExclamation: faCircleExclamation,\n    faCircleXmark: faCircleXmark,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "Icon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    value: '',\n    iconButton: true,\n    icon: faFloppyDisk,\n    light: false,\n  },\n}"
+            },
+            {
+                "name": "IconDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    value: '',\n    iconButton: true,\n    icon: faFloppyDisk,\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "IconLeft",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    value: 'zurück',\n    iconLeft: faChevronLeft,\n    light: false,\n  },\n}"
+            },
+            {
+                "name": "IconLeftDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    value: 'zurück',\n    iconLeft: faChevronLeft,\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "IconRight",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    value: 'weiter',\n    iconRight: faChevronRight,\n    light: false,\n  },\n}"
+            },
+            {
+                "name": "IconRightDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    value: 'weiter',\n    iconRight: faChevronRight,\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
             },
             {
                 "name": "Large",
@@ -2430,6 +2952,26 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "short",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '90',\n    unit: '%',\n    touched: true,\n    short: true,\n    light: false,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+            },
+            {
+                "name": "shortDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '90',\n    unit: '%',\n    touched: true,\n    short: true,\n    light: true,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2438,6 +2980,26 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "success",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.100,00',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: true,\n    error: false,\n    light: false,\n    faCircleCheck: faCircleCheck,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+            },
+            {
+                "name": "successDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.100,00',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: true,\n    error: false,\n    light: true,\n    faCircleCheck: faCircleCheck,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
             },
             {
                 "name": "Template",
@@ -2493,41 +3055,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/elements/counter/counter.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<CounterComponent>",
-                "defaultValue": "(args: CounterComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/elements/inputs/input/input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<InputComponent>",
-                "defaultValue": "(args: InputComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/elements/tiles/tile/tile.stories.ts",
+                "file": "src/app/elements/tiles/tile/tile.storiesOff.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<TileComponent>",
                 "defaultValue": "(args: TileComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TileTextComponent>",
-                "defaultValue": "(args: TileTextComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2540,26 +3072,6 @@
                 "defaultValue": "(args: TileGroupComponent) => ({\n  props: args,\n})"
             },
             {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/elements/toggle/toggle/toggle.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ToggleComponent>",
-                "defaultValue": "(args: ToggleComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ToggleCheckboxComponent>",
-                "defaultValue": "(args: ToggleCheckboxComponent) => ({\n  props: args,\n})"
-            },
-            {
                 "name": "testTiles",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2568,10 +3080,148 @@
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[\n  {\n    'label': 'label1',\n    'name': 'name',\n    'state': 'success',\n    'checked': false,\n    'image': faHouseCircleCheck,\n    'value': 'value1'\n  },\n  {\n    'label': 'label2',\n    'name': 'name',\n    'state': 'warning',\n    'checked': false,\n    'image': faHouseCircleExclamation,\n    'value': 'value2'\n  },\n  {\n    'label': 'label3',\n    'name': 'name',\n    'state': 'error',\n    'checked': false,\n    'image': faHouseCircleXmark,\n    'value': 'value3'\n  }\n]"
+            },
+            {
+                "name": "warning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: false,\n    light: false,\n    faCircleExclamation: faCircleExclamation,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+            },
+            {
+                "name": "warningDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: false,\n    light: true,\n    faCircleExclamation: faCircleExclamation,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "withInfo",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: false,\n    error: false,\n    light: false,\n    faCircleInfo: faCircleInfo,\n    errorText: 'die Fehlermeldung',\n    info: true,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+            },
+            {
+                "name": "withInfo",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: true,\n    light: false,\n    faCircleInfo: faCircleInfo,\n    info: true,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+            },
+            {
+                "name": "withInfoDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: false,\n    error: false,\n    light: true,\n    faCircleInfo: faCircleInfo,\n    errorText: 'die Fehlermeldung',\n    info: true,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "withInfoDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: true,\n    light: true,\n    faCircleInfo: faCircleInfo,\n    info: true,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
             }
         ],
         "functions": [],
-        "typealiases": [],
+        "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<CounterComponent>",
+                "file": "src/app/elements/counter/counter.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<InputComponent>",
+                "file": "src/app/elements/inputs/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<InputButtonComponent>",
+                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<TileTextComponent>",
+                "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ToggleComponent>",
+                "file": "src/app/elements/toggle/toggle/toggle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ToggleCheckboxComponent>",
+                "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonComponent>",
+                "file": "src/app/elements/buttons/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            }
+        ],
         "enumerations": [],
         "groupedVariables": {
             "src/app/shared/avatar/avatar.storiesAlt.ts": [
@@ -2641,14 +3291,24 @@
             ],
             "src/app/elements/counter/counter.stories.ts": [
                 {
+                    "name": "Dark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/counter/counter.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    placeholder: '0',\n    value: 0,\n    step: 1,\n    min: 0,\n    max: 10,\n    name: 'name',\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/elements/counter/counter.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    placeholder: '0',\n    value: 0,\n    step: 1,\n    min: 0,\n    max: 10,\n    name: 'name',\n    light: false,\n  },\n}"
                 },
                 {
                     "name": "minus",
@@ -2669,16 +3329,72 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "faPlus"
-                },
+                }
+            ],
+            "src/app/elements/text/tile-text/tile-text.stories.ts": [
                 {
-                    "name": "Template",
+                    "name": "Dark",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/elements/counter/counter.stories.ts",
+                    "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<CounterComponent>",
-                    "defaultValue": "(args: CounterComponent) => ({\n  props: args,\n})"
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'der Text',\n    light: true,\n    large: false,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'der Text',\n    light: false,\n    large: false,\n  },\n}"
+                }
+            ],
+            "src/app/elements/toggle/toggle/toggle.stories.ts": [
+                {
+                    "name": "Dark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/toggle/toggle/toggle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label1: 'Ja',\n    label2: 'Nein',\n    value1: 'true',\n    value2: 'false',\n    name: 'name',\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/toggle/toggle/toggle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label1: 'Ja',\n    label2: 'Nein',\n    value1: 'true',\n    value2: 'false',\n    name: 'name',\n    light: false,\n  },\n}"
+                }
+            ],
+            "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts": [
+                {
+                    "name": "Dark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    checked: true,\n    light: true\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    checked: true,\n    light: false\n  },\n}"
                 }
             ],
             "src/app/elements/inputs/input/input.stories.ts": [
@@ -2689,26 +3405,168 @@
                     "file": "src/app/elements/inputs/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: false,\n    error: false,\n    light: false,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
                 },
                 {
-                    "name": "Template",
+                    "name": "DefaultDark",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/elements/inputs/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<InputComponent>",
-                    "defaultValue": "(args: InputComponent) => ({\n  props: args,\n})"
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: false,\n    error: false,\n    light: true,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "error",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: 'falscher input',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: true,\n    error: true,\n    light: false,\n    faCircleExclamation: faCircleExclamation,\n    faCircleXmark: faCircleXmark,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+                },
+                {
+                    "name": "errorDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: 'falscher input',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: true,\n    error: true,\n    light: true,\n    faCircleExclamation: faCircleExclamation,\n    faCircleXmark: faCircleXmark,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "success",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.100,00',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: true,\n    error: false,\n    light: false,\n    faCircleCheck: faCircleCheck,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+                },
+                {
+                    "name": "successDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.100,00',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: true,\n    error: false,\n    light: true,\n    faCircleCheck: faCircleCheck,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "withInfo",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: false,\n    error: false,\n    light: false,\n    faCircleInfo: faCircleInfo,\n    errorText: 'die Fehlermeldung',\n    info: true,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+                },
+                {
+                    "name": "withInfoDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: false,\n    error: false,\n    light: true,\n    faCircleInfo: faCircleInfo,\n    errorText: 'die Fehlermeldung',\n    info: true,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
                 }
             ],
-            "src/app/elements/tiles/tile/tile.stories.ts": [
+            "src/app/elements/inputs/input-button/input-button.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/elements/tiles/tile/tile.stories.ts",
+                    "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: true,\n    light: false,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+                },
+                {
+                    "name": "DefaultDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: true,\n    light: true,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "short",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '90',\n    unit: '%',\n    touched: true,\n    short: true,\n    light: false,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+                },
+                {
+                    "name": "shortDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '90',\n    unit: '%',\n    touched: true,\n    short: true,\n    light: true,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "warning",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: false,\n    light: false,\n    faCircleExclamation: faCircleExclamation,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+                },
+                {
+                    "name": "warningDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: false,\n    light: true,\n    faCircleExclamation: faCircleExclamation,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "withInfo",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: true,\n    light: false,\n    faCircleInfo: faCircleInfo,\n    info: true,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+                },
+                {
+                    "name": "withInfoDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: true,\n    light: true,\n    faCircleInfo: faCircleInfo,\n    info: true,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                }
+            ],
+            "src/app/elements/tiles/tile/tile.storiesOff.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/tiles/tile/tile.storiesOff.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2718,33 +3576,11 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/elements/tiles/tile/tile.stories.ts",
+                    "file": "src/app/elements/tiles/tile/tile.storiesOff.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<TileComponent>",
                     "defaultValue": "(args: TileComponent) => ({\n  props: args,\n})"
-                }
-            ],
-            "src/app/elements/text/tile-text/tile-text.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<TileTextComponent>",
-                    "defaultValue": "(args: TileTextComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/elements/tiles/tile-group/tile-group.stories.ts": [
@@ -2779,48 +3615,86 @@
                     "defaultValue": "[\n  {\n    'label': 'label1',\n    'name': 'name',\n    'state': 'success',\n    'checked': false,\n    'image': faHouseCircleCheck,\n    'value': 'value1'\n  },\n  {\n    'label': 'label2',\n    'name': 'name',\n    'state': 'warning',\n    'checked': false,\n    'image': faHouseCircleExclamation,\n    'value': 'value2'\n  },\n  {\n    'label': 'label3',\n    'name': 'name',\n    'state': 'error',\n    'checked': false,\n    'image': faHouseCircleXmark,\n    'value': 'value3'\n  }\n]"
                 }
             ],
-            "src/app/elements/toggle/toggle/toggle.stories.ts": [
+            "src/app/elements/buttons/button/button.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/elements/toggle/toggle/toggle.stories.ts",
+                    "file": "src/app/elements/buttons/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    value: 'button label',\n    light: false,\n  },\n}"
                 },
                 {
-                    "name": "Template",
+                    "name": "DefaultDark",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/elements/toggle/toggle/toggle.stories.ts",
+                    "file": "src/app/elements/buttons/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<ToggleComponent>",
-                    "defaultValue": "(args: ToggleComponent) => ({\n  props: args,\n})"
-                }
-            ],
-            "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    value: 'button label',\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
                 },
                 {
-                    "name": "Template",
+                    "name": "Icon",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
+                    "file": "src/app/elements/buttons/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<ToggleCheckboxComponent>",
-                    "defaultValue": "(args: ToggleCheckboxComponent) => ({\n  props: args,\n})"
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    value: '',\n    iconButton: true,\n    icon: faFloppyDisk,\n    light: false,\n  },\n}"
+                },
+                {
+                    "name": "IconDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/buttons/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    value: '',\n    iconButton: true,\n    icon: faFloppyDisk,\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "IconLeft",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/buttons/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    value: 'zurück',\n    iconLeft: faChevronLeft,\n    light: false,\n  },\n}"
+                },
+                {
+                    "name": "IconLeftDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/buttons/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    value: 'zurück',\n    iconLeft: faChevronLeft,\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "IconRight",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/buttons/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    value: 'weiter',\n    iconRight: faChevronRight,\n    light: false,\n  },\n}"
+                },
+                {
+                    "name": "IconRightDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/buttons/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    value: 'weiter',\n    iconRight: faChevronRight,\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
                 }
             ],
             "src/environments/environment.prod.ts": [
@@ -2966,7 +3840,99 @@
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
-        "groupedTypeAliases": {}
+        "groupedTypeAliases": {
+            "src/app/elements/counter/counter.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<CounterComponent>",
+                    "file": "src/app/elements/counter/counter.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "src/app/elements/inputs/input/input.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InputComponent>",
+                    "file": "src/app/elements/inputs/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "src/app/elements/inputs/input-button/input-button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InputButtonComponent>",
+                    "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "src/app/elements/text/tile-text/tile-text.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<TileTextComponent>",
+                    "file": "src/app/elements/text/tile-text/tile-text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "src/app/elements/toggle/toggle/toggle.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ToggleComponent>",
+                    "file": "src/app/elements/toggle/toggle/toggle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ToggleCheckboxComponent>",
+                    "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "src/app/elements/buttons/button/button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonComponent>",
+                    "file": "src/app/elements/buttons/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ]
+        }
     },
     "routes": {
         "name": "<root>",
@@ -2996,12 +3962,111 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/elements/buttons/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/buttons/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/buttons/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "DefaultDark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/buttons/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Icon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/buttons/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconDark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/buttons/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconLeft",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/buttons/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconLeftDark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/buttons/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconRight",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/buttons/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconRightDark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/elements/counter/counter.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "CounterComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/14",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/counter/counter.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Dark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -3035,11 +4100,90 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/elements/counter/counter.stories.ts",
+                "filePath": "src/app/elements/inputs/input-button/input-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InputButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/18",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input-button/input-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Template",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "DefaultDark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "short",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "shortDark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "warning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "warningDark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "withInfo",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "withInfoDark",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -3068,7 +4212,67 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Template",
+                "name": "DefaultDark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "error",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "errorDark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "success",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "successDark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "withInfo",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/elements/inputs/input/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "withInfoDark",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -3087,7 +4291,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Default",
+                "name": "Dark",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -3097,7 +4301,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Template",
+                "name": "Default",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -3151,7 +4355,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/elements/tiles/tile/tile.stories.ts",
+                "filePath": "src/app/elements/tiles/tile/tile.storiesOff.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -3161,7 +4365,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/elements/tiles/tile/tile.stories.ts",
+                "filePath": "src/app/elements/tiles/tile/tile.storiesOff.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -3176,7 +4380,7 @@
                 "linktype": "component",
                 "name": "ToggleCheckboxComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/9",
+                "coverageCount": "0/10",
                 "status": "low"
             },
             {
@@ -3184,7 +4388,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Default",
+                "name": "Dark",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -3194,7 +4398,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Template",
+                "name": "Default",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -3213,7 +4417,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Default",
+                "name": "Dark",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -3223,7 +4427,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Template",
+                "name": "Default",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

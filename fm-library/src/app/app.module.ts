@@ -14,6 +14,10 @@ import { ToggleComponent } from './elements/toggle/toggle/toggle.component';
 import { ToggleCheckboxComponent } from './elements/toggle/toggle-checkbox/toggle-checkbox.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TileTextComponent } from './elements/text/tile-text/tile-text.component';
+import { InputButtonComponent } from './elements/inputs/input-button/input-button.component';
+import { ButtonComponent } from './elements/buttons/button/button.component';
+import { ButtonGroupComponent } from './elements/buttons/button-group/button-group.component';
+import { ToggleTristateComponent } from './elements/toggle/toggle-tristate/toggle-tristate.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { TileTextComponent } from './elements/text/tile-text/tile-text.component
     TileGroupComponent,
     ToggleComponent,
     ToggleCheckboxComponent,
-    TileTextComponent
+    TileTextComponent,
+    InputButtonComponent,
+    ButtonComponent,
+    ButtonGroupComponent,
+    ToggleTristateComponent
   ],
   imports: [
     BrowserModule,

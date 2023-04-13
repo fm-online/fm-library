@@ -26,6 +26,8 @@
             border: none;
             text-align: center;
             width: 80%;
+            font-family: $font;
+            font-size: $t2-base-size;
         }
     }
     .da-counter-btn {
@@ -43,8 +45,15 @@
         }
 
         &:hover {
-            background-color: #ccc;
+            background-color: $button-base-color;
+            color: #fff;
+
+            &.light {
+                background-color: $button-secondary-color;
+                color: $button-base-color;
+            }
         }
+
         &:active {
             background-color: $button-base-color;
             color: #fff;

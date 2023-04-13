@@ -27,14 +27,11 @@ export class TileComponent implements OnInit, OnChanges {
   constructor(private sanitizer: DomSanitizer) { this.localImage = this.sanitizer.bypassSecurityTrustHtml(this.image) }
 
   ngOnInit(): void {
-    console.log('tile', this.content)
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(changes)
     if(changes && changes['localValue']) {
       this.expanded = this.localValue !== this.value ? false : true;
-      console.log(this.expanded)
     }
   }
 

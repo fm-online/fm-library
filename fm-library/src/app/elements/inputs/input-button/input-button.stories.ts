@@ -1,7 +1,7 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { Meta, StoryObj } from '@storybook/angular/types-6-0';
 import { moduleMetadata} from '@storybook/angular';
-import {InputComponent} from './input.component';
+import {InputButtonComponent} from './input-button.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCircleCheck, faCircleInfo, faCircleXmark, faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
 import { APP_INITIALIZER } from '@angular/core';
@@ -10,8 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 export default {
-  title: 'inputs/InputComponent',
-  component: InputComponent,
+  title: 'inputs/InputButtonComponent',
+  component: InputButtonComponent,
   decorators: [
     moduleMetadata({
       imports: [
@@ -34,21 +34,17 @@ export default {
   ],
 } as Meta;
 
-type Story = StoryObj<InputComponent>;
+type Story = StoryObj<InputButtonComponent>;
 
 // More on component templates: https://storybook.js.org/docs/angular/writing-stories/introduction#using-args
 export const Default: Story = {
   args: {
     label: 'das Label',
     name: 'id',
-    value: '',
-    type: 'text',
-    placeholder: '0,00',
+    value: '1.200,00',
     unit: '€',
-    touched: false,
-    error: false,
+    touched: true,
     light: false,
-    errorText: 'die Fehlermeldung',
     info: false,
     infoText: 'info Text',
     infoHeader: 'info Überschrift',
@@ -59,14 +55,10 @@ export const DefaultDark: Story = {
   args: {
     label: 'das Label',
     name: 'id',
-    value: '',
-    type: 'text',
-    placeholder: '0,00',
+    value: '1.200,00',
     unit: '€',
-    touched: false,
-    error: false,
+    touched: true,
     light: true,
-    errorText: 'die Fehlermeldung',
     info: false,
     infoText: 'info Text',
     infoHeader: 'info Überschrift',
@@ -85,15 +77,11 @@ export const withInfo: Story = {
   args: {
     label: 'das Label',
     name: 'id',
-    value: '',
-    type: 'text',
-    placeholder: '0,00',
+    value: '1.200,00',
     unit: '€',
-    touched: false,
-    error: false,
+    touched: true,
     light: false,
     faCircleInfo: faCircleInfo,
-    errorText: 'die Fehlermeldung',
     info: true,
     infoText: 'info Text',
     infoHeader: 'info Überschrift',
@@ -104,15 +92,11 @@ export const withInfoDark: Story = {
   args: {
     label: 'das Label',
     name: 'id',
-    value: '',
-    type: 'text',
-    placeholder: '0,00',
+    value: '1.200,00',
     unit: '€',
-    touched: false,
-    error: false,
+    touched: true,
     light: true,
     faCircleInfo: faCircleInfo,
-    errorText: 'die Fehlermeldung',
     info: true,
     infoText: 'info Text',
     infoHeader: 'info Überschrift',
@@ -127,40 +111,30 @@ export const withInfoDark: Story = {
   },
 };
 
-export const error: Story = {
+export const warning: Story = {
   args: {
     label: 'das Label',
     name: 'id',
-    value: 'falscher input',
-    type: 'text',
-    placeholder: '0,00',
+    value: '1.200,00',
     unit: '€',
-    touched: true,
-    error: true,
+    touched: false,
     light: false,
     faCircleExclamation: faCircleExclamation,
-    faCircleXmark: faCircleXmark,
-    errorText: 'die Fehlermeldung',
     info: false,
     infoText: 'info Text',
     infoHeader: 'info Überschrift',
   },
 };
 
-export const errorDark: Story = {
+export const warningDark: Story = {
   args: {
     label: 'das Label',
     name: 'id',
-    value: 'falscher input',
-    type: 'text',
-    placeholder: '0,00',
+    value: '1.200,00',
     unit: '€',
-    touched: true,
-    error: true,
+    touched: false,
     light: true,
     faCircleExclamation: faCircleExclamation,
-    faCircleXmark: faCircleXmark,
-    errorText: 'die Fehlermeldung',
     info: false,
     infoText: 'info Text',
     infoHeader: 'info Überschrift',
@@ -175,38 +149,30 @@ export const errorDark: Story = {
   },
 };
 
-export const success: Story = {
+export const short: Story = {
   args: {
     label: 'das Label',
     name: 'id',
-    value: '1.100,00',
-    type: 'text',
-    placeholder: '0,00',
-    unit: '€',
+    value: '90',
+    unit: '%',
     touched: true,
-    error: false,
+    short: true,
     light: false,
-    faCircleCheck: faCircleCheck,
-    errorText: 'die Fehlermeldung',
     info: false,
     infoText: 'info Text',
     infoHeader: 'info Überschrift',
   },
 };
 
-export const successDark: Story = {
+export const shortDark: Story = {
   args: {
     label: 'das Label',
     name: 'id',
-    value: '1.100,00',
-    type: 'text',
-    placeholder: '0,00',
-    unit: '€',
+    value: '90',
+    unit: '%',
     touched: true,
-    error: false,
+    short: true,
     light: true,
-    faCircleCheck: faCircleCheck,
-    errorText: 'die Fehlermeldung',
     info: false,
     infoText: 'info Text',
     infoHeader: 'info Überschrift',

@@ -1,5 +1,5 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/angular/types-6-0';
+import { Meta, StoryObj } from '@storybook/angular/types-6-0';
 import {TileTextComponent} from './tile-text.component';
 
 export default {
@@ -7,16 +7,30 @@ export default {
   component: TileTextComponent,
 } as Meta;
 
-// More on component templates: https://storybook.js.org/docs/angular/writing-stories/introduction#using-args
-const Template: Story<TileTextComponent> = (args: TileTextComponent) => ({
-  props: args,
-});
+type Story = StoryObj<TileTextComponent>;
 
-export const Default = Template.bind({});
-// More on args: https://storybook.js.org/docs/angular/writing-stories/args
-Default.args = {
-  label: 'der Text',
-  light: false,
-  large: false,
+export const Default: Story = {
+  args: {
+    label: 'der Text',
+    light: false,
+    large: false,
+  },
 };
+
+export const Dark: Story = {
+  args: {
+    label: 'der Text',
+    light: true,
+    large: false,
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dunkel',
+      values: [
+        { name: 'dunkel', value: '#203864' },
+      ],
+    },
+  },
+};
+
 
