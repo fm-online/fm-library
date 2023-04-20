@@ -25,8 +25,8 @@
             #target
         >
         <div class="da-input-unit">{{unit}}</div>
-        <div class="da-input-info-button" *ngIf="info" [ngClass]="{'light' : light}">
-            <fa-icon class="da-input-info-icon" [icon]="faCircleInfo"></fa-icon>
+        <div class="da-input-info-button" *ngIf="info">
+            <app-info-button [light]="light" (infoPressed)="getInfo($event)"></app-info-button>
         </div>
     </label>
     <div class="da-input-error" *ngIf="error" [ngClass]="{'light' : light}">

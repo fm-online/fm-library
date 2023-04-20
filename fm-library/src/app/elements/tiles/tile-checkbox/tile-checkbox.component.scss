@@ -1,9 +1,9 @@
 @import "../../../../styles.scss"; 
 
-.da-tile-single {
+.da-tile-checkbox-single {
     font-family: $font;
 
-    .da-tile {
+    .da-tile-checkbox {
         position: relative;
         display: inline-block;
         border-radius: 25px;
@@ -25,7 +25,7 @@
             border: 1px solid $button-base-color;
         }
      
-        .da-tile-icon-wrapper {
+        .da-tile-checkbox-icon-wrapper {
                 margin-left: 15px;
                 top: 15px;
                 position: absolute;
@@ -36,7 +36,7 @@
                 width: 20px;
                 height: 20px;
                 display: none;
-            .da-tile-icon {
+            .da-tile-checkbox-icon {
                 position: absolute;
                 top: -4px;
                 left: -1px;
@@ -54,7 +54,7 @@
                 }
             }
         }
-        .da-tile-image {
+        .da-tile-checkbox-image {
             width: 244px;
             height: 90px;
             color: $t4-base-color;
@@ -72,20 +72,20 @@
             width: 0;
             height: 0;
     
-            &:checked ~ .da-tile-icon-wrapper {
+            &:checked ~ .da-tile-checkbox-icon-wrapper {
                 display: block;
             }
 
-            &:checked ~ .da-tile-image {
+            &:checked ~ .da-tile-checkbox-image {
                 color: $t4-secondary-color;
             }
     
-            &:checked ~ .da-tile-label {
+            &:checked ~ .da-tile-checkbox-label {
                 color: $t4-secondary-color;
             }
         }
 
-        .da-tile-label {
+        .da-tile-checkbox-label {
             font-size: 20px;
             color: $t4-base-color;
             height: 100px;
@@ -103,7 +103,7 @@
         }
     }
 
-    .da-tile-expanded {
+    .da-tile-checkbox-expanded {
         display: flex;
         align-items: center;
         flex-direction: column;

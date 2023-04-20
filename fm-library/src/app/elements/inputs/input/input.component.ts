@@ -27,7 +27,7 @@ export class InputComponent implements OnInit {
   faCircleExclamation = faCircleExclamation;
   faCircleInfo = faCircleInfo;
 
-  @Output() public inputValue:EventEmitter<any> = new EventEmitter<boolean>();
+  @Output() public inputValue:EventEmitter<any> = new EventEmitter<string>();
   
   constructor() {}
 
@@ -35,8 +35,14 @@ export class InputComponent implements OnInit {
   }
 
   getValue(e: any) {
-    console.log(e.srcElement.value)
+    const inputValue = e.srcElement.value.replaceAll('.', '').replaceAll(',', '.');
+    this.value = parseInt(inputValue).toLocaleString('de-DE', { maximumFractionDigits: 2, minimumFractionDigits: 0 });
+    console.log(e.srcElement.value);
     this.inputValue.emit(e.srcElement.value);
+  }
+
+  getInfo(e: boolean) {
+    console.log(e)
   }
 
 }

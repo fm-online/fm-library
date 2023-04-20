@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "fm-library"
+  "defaultProject": "fm-library",
+  "cli": {
+    "analytics": false
+  }
 }

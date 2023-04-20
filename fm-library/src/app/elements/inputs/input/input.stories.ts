@@ -8,6 +8,7 @@ import { APP_INITIALIZER } from '@angular/core';
 import { MainPipe } from '../../../pipes/pipe.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { InfoButtonComponent } from '../../buttons/info-button/info-button.component';
 
 export default {
   title: 'inputs/InputComponent',
@@ -17,7 +18,11 @@ export default {
       imports: [
         FontAwesomeModule, 
         MainPipe, 
-        NgbTooltipModule],
+        NgbTooltipModule
+      ],
+      declarations: [
+        InfoButtonComponent,
+      ],
       providers: [
         {
           provide: APP_INITIALIZER,

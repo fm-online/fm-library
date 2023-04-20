@@ -1,0 +1,18 @@
+
+<div class="da-input-select">
+<label class="da-input-select-label">
+    <fa-icon [icon]="faCheck" class="da-input-select-success-icon" *ngIf="success"></fa-icon>
+    <mat-form-field appearance="fill" class="da-input-select-select">
+        <mat-label>{{placeholder}}</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let item of selectItems" [value]="item.value">
+            {{item.text}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    <!-- <fa-icon [icon]="faArrowDown" class="da-input-select-arrow-icon"></fa-icon> -->
+    <div class="da-input-info-button" *ngIf="info">
+        <app-info-button [light]="light" (infoPressed)="getInfo($event)"></app-info-button>
+    </div>
+</label>
+</div>
