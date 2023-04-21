@@ -31,8 +31,7 @@ export default {
           provide: APP_INITIALIZER,
           useFactory: (iconLibrary: FaIconLibrary) => async() => {
             // Add any icons needed here:
-            iconLibrary.addIconPacks(fas);
-            iconLibrary.addIcons(faCircleCheck);
+            iconLibrary.addIcons();
           },
           // When using a factory provider you need to explicitly specify its dependencies.
           deps: [FaIconLibrary],
@@ -53,6 +52,7 @@ export const Default4Stars = Template.bind({});
 Default4Stars.args = {
   label: 'das Label',
   name: 'name',
+  icon: faCircleCheck,
   stars: 4,
   info: true,
 };
@@ -63,5 +63,6 @@ Default5Stars.args = {
   label: 'das Label',
   name: 'name',
   stars: 5,
+  icon: faCircleCheck,
   info: true,
 };

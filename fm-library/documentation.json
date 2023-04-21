@@ -2389,7 +2389,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"da-tiles\">\n    <ng-container *ngFor=\"let tile of tiles; let num = index\">\n        <app-tile-checkbox\n            [label]=\"tile.label\"\n            [name]=\"tile.name\"\n            [checked]=\"tile.checked\"\n            [image]=\"tile.image\"\n            [state]=\"tile.state\"\n            [value]=\"tile.value\"\n            [content]=\"tile.content\"\n            (checkboxValue)=\"sendValue($event)\">\n        </app-tile-checkbox>\n    </ng-container>\n</div>"
+            "templateData": "<div class=\"da-tiles\">\n    <ng-container *ngFor=\"let tile of tiles; let num = index\">\n        <app-tile-checkbox\n            [label]=\"tile.label\"\n            [name]=\"tile.name\"\n            [checked]=\"tile.checked\"\n            [image]=\"tile.image\"\n            [icon]=\"tile.icon\"\n            [state]=\"tile.state\"\n            [value]=\"tile.value\"\n            [content]=\"tile.content\"\n            (checkboxValue)=\"sendValue($event)\">\n        </app-tile-checkbox>\n    </ng-container>\n</div>"
         },
         {
             "name": "TileComponent",
@@ -2787,7 +2787,7 @@
         },
         {
             "name": "TileRatingComponent",
-            "id": "component-TileRatingComponent-e2292579faaa7cf7946e84dbf8ccec907ad663c93a5a257f5532152661acee758d0eb0911629c0d678349b95048fdcb6ff9f21758ddef4d9d04d9a4a6d563b11",
+            "id": "component-TileRatingComponent-5f5d7bc0b6916f424817a0438d45257d6f76387803c743a5d5e4afbbc3ffd2511089ee48a19c9e8e96f750913b9a7625404a09258c7a93dcc65115e1bb66cf8d",
             "file": "src/app/elements/tiles/tile-rating/tile-rating.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -2956,7 +2956,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output, TemplateRef } from '@angular/core';\nimport { faCircleCheck } from '@fortawesome/free-solid-svg-icons';\n\n@Component({\n  selector: 'app-tile-rating',\n  templateUrl: './tile-rating.component.html',\n  styleUrls: ['./tile-rating.component.scss'],\n})\n\nexport class TileRatingComponent implements OnInit {\n  @Input() label: string = 'label';\n  @Input() name: string = 'name';\n  @Input() stars: number = 5;\n  @Input() icon: any = faCircleCheck;\n  @Input() info:  boolean = true;\n  success!: boolean;\n  rating: number = 0;\n  @Output() public ratingValue:EventEmitter<any> = new EventEmitter<any>();\n\n  constructor() {}\n\n  ngOnInit(): void {\n  }\n\n  getValue(e: any) {\n    const name = this.name;\n    const rating = e.rating\n    this.ratingValue.emit({rating, name});\n    this.success = true;\n  }\n\n  getInfo(e: boolean) {\n    console.log(e)\n  }\n\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output, TemplateRef } from '@angular/core';\nimport { faCircleCheck } from '@fortawesome/free-solid-svg-icons';\n\n@Component({\n  selector: 'app-tile-rating',\n  templateUrl: './tile-rating.component.html',\n  styleUrls: ['./tile-rating.component.scss'],\n})\n\nexport class TileRatingComponent implements OnInit {\n  @Input() label: string = 'label';\n  @Input() name: string = 'name';\n  @Input() stars: number = 5;\n  @Input() icon: any = faCircleCheck;\n  @Input() info:  boolean = true;\n  success!: boolean;\n  rating: number = 0;\n  @Output() public ratingValue:EventEmitter<any> = new EventEmitter<any>();\n\n  constructor() {}\n\n  ngOnInit(): void {\n  }\n\n  getValue(e: any) {\n    const name = this.name;\n    const rating = e.rating;\n    this.success = true;\n    this.ratingValue.emit({rating, name});\n  }\n\n  getInfo(e: boolean) {\n    console.log(e)\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -3809,16 +3809,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    light: false,\n  },\n}"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/elements/inputs/dropdown/dropdown.storiesTemp.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3834,6 +3824,26 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: false,\n    error: false,\n    light: false,\n    errorText: 'die Fehlermeldung',\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    buttons: testButtons,\n    light: false,\n  },\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    light: false,\n  },\n}"
             },
             {
                 "name": "Default",
@@ -3916,16 +3926,6 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    buttons: testButtons,\n    light: false,\n  },\n}"
-            },
-            {
                 "name": "Default4Stars",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -3959,16 +3959,6 @@
                 "name": "DefaultDark",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
-            },
-            {
-                "name": "DefaultDark",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/elements/inputs/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3979,21 +3969,31 @@
                 "name": "DefaultDark",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: true,\n    light: true,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
-            },
-            {
-                "name": "DefaultDark",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    buttons: testButtons,\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "DefaultDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+            },
+            {
+                "name": "DefaultDark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/inputs/input-button/input-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '1.200,00',\n    unit: '€',\n    touched: true,\n    light: true,\n    info: false,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
             },
             {
                 "name": "environment",
@@ -4318,21 +4318,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TileGroupComponent>",
-                "defaultValue": "(args: TileGroupComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/elements/tiles/tile-rating/tile-rating.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<TileRatingComponent>",
                 "defaultValue": "(args: TileRatingComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/elements/tiles/tile-group/tile-group.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TileGroupComponent>",
+                "defaultValue": "(args: TileGroupComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -4392,7 +4392,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\n  {\n    'label': 'label1',\n    'name': 'name1',\n    'state': 'success',\n    'checked': false,\n    'image': faHouseCircleCheck,\n    'value': 'value1'\n  },\n  {\n    'label': 'label2',\n    'name': 'name2',\n    'state': 'warning',\n    'checked': false,\n    'image': faHouseCircleExclamation,\n    'value': 'value2'\n  },\n  {\n    'label': 'label3',\n    'name': 'name3',\n    'state': 'error',\n    'checked': false,\n    'image': faHouseCircleXmark,\n    'value': 'value3'\n  }\n]"
+                "defaultValue": "[\n  {\n    'label': 'label1',\n    'name': 'name1',\n    'state': 'success',\n    'icon': faCircleCheck,\n    'checked': false,\n    'image': faHouseCircleCheck,\n    'value': 'value1'\n  },\n  {\n    'label': 'label2',\n    'name': 'name2',\n    'state': 'warning',\n    'icon': faCircleExclamation,\n    'checked': false,\n    'image': faHouseCircleExclamation,\n    'value': 'value2'\n  },\n  {\n    'label': 'label3',\n    'name': 'name3',\n    'state': 'error',\n    'checked': false,\n    'icon': faCircleXmark,\n    'image': faHouseCircleXmark,\n    'value': 'value3'\n  }\n]"
             },
             {
                 "name": "testTiles",
@@ -4503,17 +4503,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<InfoButtonComponent>",
-                "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 177
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<DropdownComponent>",
                 "file": "src/app/elements/inputs/dropdown/dropdown.storiesTemp.ts",
                 "deprecated": false,
@@ -4527,6 +4516,28 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputComponent>",
                 "file": "src/app/elements/inputs/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonGroupComponent>",
+                "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<InfoButtonComponent>",
+                "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -4571,17 +4582,6 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ToggleCheckboxComponent>",
                 "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 177
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<ButtonGroupComponent>",
-                "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -4845,28 +4845,6 @@
                     "defaultValue": "{\n  args: {\n    value: 'weiter',\n    iconRight: faChevronRight,\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
                 }
             ],
-            "src/app/elements/buttons/info-button/info-button.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    light: false,\n  },\n}"
-                },
-                {
-                    "name": "DefaultDark",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
-                }
-            ],
             "src/app/elements/inputs/dropdown/dropdown.storiesTemp.ts": [
                 {
                     "name": "Default",
@@ -4969,6 +4947,60 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    label: 'das Label',\n    name: 'id',\n    value: '',\n    type: 'text',\n    placeholder: '0,00',\n    unit: '€',\n    touched: false,\n    error: false,\n    light: true,\n    faCircleInfo: faCircleInfo,\n    errorText: 'die Fehlermeldung',\n    info: true,\n    infoText: 'info Text',\n    infoHeader: 'info Überschrift',\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                }
+            ],
+            "src/app/elements/buttons/button-group/button-group.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    buttons: testButtons,\n    light: false,\n  },\n}"
+                },
+                {
+                    "name": "DefaultDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    buttons: testButtons,\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
+                },
+                {
+                    "name": "testButtons",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\n  {\n    'iconLeft': faChevronLeft,\n    'value': 'zurück',\n    'type': 'back'\n  },\n  {\n    'label': 'Fortschritt speichern',\n    'iconButton': true,\n    'icon': faFloppyDisk,\n    'type': 'save',\n  },\n  {\n    'iconRight': faChevronRight,\n    'value': 'weiter',\n    'type': 'next'\n  }\n]"
+                }
+            ],
+            "src/app/elements/buttons/info-button/info-button.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    light: false,\n  },\n}"
+                },
+                {
+                    "name": "DefaultDark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
                 }
             ],
             "src/app/elements/inputs/input-button/input-button.stories.ts": [
@@ -5104,7 +5136,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\n  {\n    'label': 'label1',\n    'name': 'name1',\n    'state': 'success',\n    'checked': false,\n    'image': faHouseCircleCheck,\n    'value': 'value1'\n  },\n  {\n    'label': 'label2',\n    'name': 'name2',\n    'state': 'warning',\n    'checked': false,\n    'image': faHouseCircleExclamation,\n    'value': 'value2'\n  },\n  {\n    'label': 'label3',\n    'name': 'name3',\n    'state': 'error',\n    'checked': false,\n    'image': faHouseCircleXmark,\n    'value': 'value3'\n  }\n]"
+                    "defaultValue": "[\n  {\n    'label': 'label1',\n    'name': 'name1',\n    'state': 'success',\n    'icon': faCircleCheck,\n    'checked': false,\n    'image': faHouseCircleCheck,\n    'value': 'value1'\n  },\n  {\n    'label': 'label2',\n    'name': 'name2',\n    'state': 'warning',\n    'icon': faCircleExclamation,\n    'checked': false,\n    'image': faHouseCircleExclamation,\n    'value': 'value2'\n  },\n  {\n    'label': 'label3',\n    'name': 'name3',\n    'state': 'error',\n    'checked': false,\n    'icon': faCircleXmark,\n    'image': faHouseCircleXmark,\n    'value': 'value3'\n  }\n]"
                 }
             ],
             "src/app/elements/tiles/tile-group/tile-group.stories.ts": [
@@ -5189,38 +5221,6 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
-                }
-            ],
-            "src/app/elements/buttons/button-group/button-group.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    buttons: testButtons,\n    light: false,\n  },\n}"
-                },
-                {
-                    "name": "DefaultDark",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    buttons: testButtons,\n    light: true,\n  },\n  parameters: {\n    backgrounds: {\n      default: 'dunkel',\n      values: [\n        { name: 'dunkel', value: '#203864' },\n      ],\n    },\n  },\n}"
-                },
-                {
-                    "name": "testButtons",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "[]",
-                    "defaultValue": "[\n  {\n    'iconLeft': faChevronLeft,\n    'value': 'zurück',\n    'type': 'back'\n  },\n  {\n    'label': 'Fortschritt speichern',\n    'iconButton': true,\n    'icon': faFloppyDisk,\n    'type': 'save',\n  },\n  {\n    'iconRight': faChevronRight,\n    'value': 'weiter',\n    'type': 'next'\n  }\n]"
                 }
             ],
             "src/app/elements/tiles/tile-rating/tile-rating.stories.ts": [
@@ -5425,19 +5425,6 @@
                     "kind": 177
                 }
             ],
-            "src/app/elements/buttons/info-button/info-button.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<InfoButtonComponent>",
-                    "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 177
-                }
-            ],
             "src/app/elements/inputs/dropdown/dropdown.storiesTemp.ts": [
                 {
                     "name": "Story",
@@ -5458,6 +5445,32 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputComponent>",
                     "file": "src/app/elements/inputs/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "src/app/elements/buttons/button-group/button-group.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonGroupComponent>",
+                    "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
+            "src/app/elements/buttons/info-button/info-button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InfoButtonComponent>",
+                    "file": "src/app/elements/buttons/info-button/info-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -5510,19 +5523,6 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ToggleCheckboxComponent>",
                     "file": "src/app/elements/toggle/toggle-checkbox/toggle-checkbox.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 177
-                }
-            ],
-            "src/app/elements/buttons/button-group/button-group.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<ButtonGroupComponent>",
-                    "file": "src/app/elements/buttons/button-group/button-group.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",

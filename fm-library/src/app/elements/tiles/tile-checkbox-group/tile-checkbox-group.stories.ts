@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/angular/types-6-0';
 import { moduleMetadata} from '@storybook/angular';
 import {TileCheckboxGroupComponent} from './tile-checkbox-group.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCircleCheck, faHouseCircleCheck, faHouseCircleExclamation, faHouseCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck, faCircleExclamation, faCircleXmark, faHouseCircleCheck, faHouseCircleExclamation, faHouseCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { APP_INITIALIZER } from '@angular/core';
 import { MainPipe } from '../../../pipes/pipe.module';
 import { AngularSvgIconModule } from 'angular-svg-icon';
@@ -50,6 +50,7 @@ const testTiles = [
     'label': 'label1',
     'name': 'name1',
     'state': 'success',
+    'icon': faCircleCheck,
     'checked': false,
     'image': faHouseCircleCheck,
     'value': 'value1'
@@ -58,6 +59,7 @@ const testTiles = [
     'label': 'label2',
     'name': 'name2',
     'state': 'warning',
+    'icon': faCircleExclamation,
     'checked': false,
     'image': faHouseCircleExclamation,
     'value': 'value2'
@@ -67,6 +69,7 @@ const testTiles = [
     'name': 'name3',
     'state': 'error',
     'checked': false,
+    'icon': faCircleXmark,
     'image': faHouseCircleXmark,
     'value': 'value3'
   }

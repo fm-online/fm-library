@@ -24,9 +24,9 @@ export class TileRatingComponent implements OnInit {
 
   getValue(e: any) {
     const name = this.name;
-    const rating = e.rating
-    this.ratingValue.emit({rating, name});
+    const rating = e.rating;
     this.success = true;
+    this.ratingValue.emit({rating, name});
   }
 
   getInfo(e: boolean) {
