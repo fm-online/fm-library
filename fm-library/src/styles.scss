@@ -1,7 +1,12 @@
 @import "assets/styles/colors";
 @import "assets/styles/settings";
 @import "assets/styles/fonts";
-@import "~css-star-rating/scss/star-rating";
+@import "../node_modules/css-star-rating/scss/star-rating";
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../node_modules/@angular/material/theming';
+
+@include mat-core();
+
 
 @import url("https://p.typekit.net/p.css?s=1&k=nch7gyt&ht=tk&f=10879.10884.10886&a=57446085&app=typekit&e=css");
 @font-face {
@@ -7984,3 +7989,73 @@
     font-display: block;
     src: url("assets/fonts/fa-v4compatibility.woff2") format("woff2"), url("assets/fonts/fa-v4compatibility.ttf") format("truetype");
     unicode-range: U+F041,U+F047,U+F065-F066,U+F07D-F07E,U+F080,U+F08B,U+F08E,U+F090,U+F09A,U+F0AC,U+F0AE,U+F0B2,U+F0D0,U+F0D6,U+F0E4,U+F0EC,U+F10A-F10B,U+F123,U+F13E,U+F148-F149,U+F14C,U+F156,U+F15E,U+F160-F161,U+F163,U+F175-F178,U+F195,U+F1F8,U+F219,U+F27A; }
+
+    //material styles
+
+.mat-select-panel {
+  background-color: #fff!important;
+  border-radius: 24px!important;
+  border: 0px solid transparent!important;
+  margin-bottom: -10px!important;
+  border-bottom: 1px solid $button-base-color!important;
+  box-shadow: 0 3px 5px $shadow-base-color!important;
+}
+
+.mat-select-value {
+  margin-left: 18px!important;
+  color: $button-base-color!important;
+}
+
+.mat-form-field-infix {
+  display: flex!important;
+  border-top: 0px solid transparent!important;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  border-top: 0px solid transparent!important;
+  color: $button-base-color!important;
+}
+
+
+.mat-select-arrow-wrapper {
+  margin-top: 17px!important;
+
+  .mat-select-arrow {
+    border-top-color: $button-base-color!important;
+  }
+}
+
+.mat-datepicker-content-container {
+  background-color: #fff;
+  border-radius: 24px;
+  border: 0px solid transparent!important;
+  border-bottom: 1px solid $button-base-color!important;
+  box-shadow: 0 3px 5px $shadow-base-color!important;
+}
+
+.mat-icon-button,
+.mat-button {
+  fill: $button-base-color!important;
+  color: $button-base-color!important;
+  line-height: 22px!important;
+  background-color: transparent;
+  svg {
+      fill: $button-base-color!important;
+  }
+}
+
+.mat-calendar-table-header,
+.mat-calendar-body-label {
+  display: none;
+}
+
+.mat-calendar-body-cell-content {
+  border: 0px solid transparent!important;
+  color: $button-base-color!important;
+
+  &:hover {
+    background-color: $button-base-color!important;
+    color: $input-base-color!important;
+  }
+
+}

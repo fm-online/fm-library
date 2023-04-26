@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { faArrowDown, faArrowUp, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,10 +9,14 @@ import { faArrowDown, faArrowUp, faCircleCheck } from '@fortawesome/free-solid-s
 })
 export class DropdownComponent implements OnInit {
   @Input() name!: string;
-  @Input() placeholder!: string;
+  @Input() label!: string;
   @Input() selectItems!: any;
+  @Input() icon = faCircleCheck;
   @Input() light: boolean = false;
   @Input() info: boolean = false;
+  @Input() selectedItem!: any;
+  @Output() public selectValue:EventEmitter<any> = new EventEmitter<string>();
+
   success: boolean = false;
   faCheck = faCircleCheck;
   faArrowDown = faArrowDown;
@@ -19,12 +24,12 @@ export class DropdownComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   getValue(e: any) {
     console.log('change', e);
     this.success = true;
+    this.selectValue.emit(e);
   }
 
   getInfo(e: boolean) {
