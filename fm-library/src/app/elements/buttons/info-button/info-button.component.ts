@@ -17,6 +17,7 @@ export class InfoButtonComponent implements OnInit {
   }
 
   getInfo() {
+    console.log("test")
     this.infoPressed.emit(true);
   }
 

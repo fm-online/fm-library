@@ -1,7 +1,9 @@
 <div class="da-input-date-single">
     <div class="da-input-date-label" [ngClass]="{'light' : light}">{{label}}</div>
     <label class="da-input-date">
-      <fa-icon [icon]="icon" class="da-input-date-success-icon" *ngIf="success"></fa-icon>
+      <div class="da-input-icons" *ngIf="success">
+        <fa-icon [icon]="icon" class="da-input-date-success-icon"></fa-icon>
+      </div>
       <mat-form-field appearance="fill" color="accent">
         <!-- <mat-label>{{label}}</mat-label> -->
         <input 

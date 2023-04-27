@@ -20,12 +20,12 @@
     .da-info-icon {
         font-size: 20px;
         position: absolute;
-        top: 0;
+        top: -1px;
         left: 0;
 
         &:hover {
             font-size: 22px;
-            top: -1px;
+            top: -2px;
             left: -1px;
         }
     }

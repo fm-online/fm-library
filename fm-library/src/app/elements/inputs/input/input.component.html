@@ -1,7 +1,7 @@
 <div class="da-input-single">
     <div class="da-input-label" [ngClass]="{'light' : light}">{{label}}</div>
     <label class="da-input">
-        <div class="da-input-icons" *ngIf="touched" [ngClass]="{'error' : error}">
+        <div class="da-input-icons" *ngIf="touched">
             <fa-icon 
                 *ngIf="!error" 
                 class="da-input-icon-green" 
